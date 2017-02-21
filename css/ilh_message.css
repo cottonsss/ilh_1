@@ -1,0 +1,123 @@
+@charset "utf-8";
+/*---------------------- 상세메시지 ----------------------*/
+/* 상세메시지창 헤더 */
+#header .msg_title_txt {padding-left:50px; color:#fff; font-size:18px; font-weight:900; text-align:left; line-height:48px; letter-spacing:-1px;}
+#header .msg_title_txt span {font-size:12px; font-weight:700;}
+/* 상세메시지 창 버튼 */
+#msg_btn_wrap {position:relative; width:100%; height:35px; margin-bottom:10px;}
+#msg_btn_wrap ul li {display:table; float:left; margin-right:5px;}
+#msg_btn_wrap ul li:nth-child(4) {float:right; margin:0;}
+#msg_btn_wrap ul li a {display:table-cell; padding:0 5px; vertical-align:middle;}
+#msg_btn_wrap ul li a img {vertical-align:middle;}
+#msg_btn_wrap .msg_btn_com {width:100%; margin-top:4px; padding:5px 4px; color:#46526c; font-size:12px; line-height:15px;}
+#msg_btn_wrap .btn_call {display:inline-block; position:relative; margin-top:3px; width:40px; height:17px; line-height:14px; font-size:14px; font-weight:700; text-decoration:none; text-align:center; -webkit-tap-highlight-color:rgba(255,255,255,0); padding:4px 0; color:#46526c;}
+#msg_btn_wrap .btn_call span {display:block; width:100%; height:16px; background:url(http://image.club5678.com/imgs/ilheayo_job/img01/img_btn_call.png) no-repeat center center; background-size:14px 16px; text-indent:-9999px;}
+/* 상세메시지 컨텐츠 */
+#msg_contents {width:100%; height:auto; overflow:hidden; margin-bottom:20px;}
+#msg_contents .msg_box_wrap {display:block; width:95%; height:auto; margin:0 auto; overflow:hidden; margin-bottom:20px; }
+#msg_contents .day_line {display:block; position:relative; width:100%; height:1px; margin:20px 0 30px 0; background:#cdd5e1; text-align:center;}
+#msg_contents .day_txt {position:absolute; top:-9px; left:50%; width:120px; height:20px; background:#fff; color:#46526c; font-size:12px; line-height:20px; transform:translateX(-50%);}
+#msg_contents .msg_wrap {position:relative; z-index:1; clear:both; width:100%; height:auto; margin-bottom:10px; overflow:hidden;}
+/* 사진 */
+#msg_contents .msg_wrap .msg_photo {position:absolute; z-index:10; top:0; width:42px; height:50px;}
+#msg_contents .msg_wrap .msg_photo a {display:block; position:relative; width:100%; height:100%; box-sizing:border-box;}
+#msg_contents .msg_wrap .msg_photo .photo_clip {width:42px; height:42px; overflow:hidden; border-radius:5px;}
+#msg_contents .msg_wrap .msg_photo .photo_clip img {width:42px; height:42px;}
+/* 메시지 사진 하단 뱃지 */
+#msg_contents .msg_wrap .msg_photo .photo_badge {display:inline-block; position:absolute; top:33px; right:7px; width:28px; height:18px; background-size:28px 18px; text-indent:-9999px;}
+#msg_contents .msg_find_job_badge {background:url(http://image.club5678.com/imgs/ilheayo_job/img01/ico_findjob_badge.png) no-repeat center center;}
+#msg_contents .msg_job_offer_badge {background:url(http://image.club5678.com/imgs/ilheayo_job/img01/ico_joboffer_badge.png) no-repeat center center;}
+/* 메시지 첨부 이미지 */
+#msg_contents .talkbubble_wrap {position:relative; max-width:55%;}
+#msg_contents .talkbubble_wrap img {display:block; width:100px; height:auto; border-radius:10px;}
+/* 음성통화 관련 */
+#msg_contents .phone_call {width:12px; height:17px;}
+#msg_contents .phone_call span {padding-left:15px;}
+/* 내 메시지 */
+#my_msg .my_msg_photo {right:0;}
+#my_msg .my_bubble_warp {top:20px; right:50px; float:right; margin-bottom:20px;}
+#my_msg .my_talkbubble {position:relative; padding:9px 10px 9px 10px; border-radius:20px; background-color:#0081d5; color:#fff; font-size:13px; line-height:17px; word-break:break-all;}
+#my_msg .my_talkbubble:after {position:absolute; top:9px; right:-5px; width:7px; height:9px; background:url(http://image.club5678.com/imgs/ilheayo_job/img01/img_my_msg.png) no-repeat; background-size:7px 9px; content:"";}
+#my_msg .my_talk_time {display:block; position:absolute; left:-59px; bottom:5px; color:#a2a2a2; font-size:11px;}
+#my_msg .my_talk_time:before {position:absolute; left:-10px; content:"1"; color:#ff0000;}
+#my_msg .comp_txt_line {position:absolute; top:-2px; right:55px;} /* 상대 메시지 _ 회사명 */
+#my_msg .comp_txt {color:#46526c; font-size:12px; font-weight:600;}
+#my_msg .my_phone_img {padding:2px 0; background:url(http://image.club5678.com/imgs/ilheayo_job/img01/ico_msg_call.png) no-repeat left center; background-size:12px 17px;}
+/* 상대 메시지 */
+#my_msg .ptn_msg_photo {left:0;}
+#ptn_msg .ptn_bubble_wrap {top:20px; left:50px; float:left; margin-bottom:25px;}
+#ptn_msg .ptn_talkbubble {position:relative; padding:9px 10px 9px 10px; border-radius:20px; background-color:#eceff4; color:#46526c; font-size:13px; line-height:17px; word-break:break-all;}
+#ptn_msg .ptn_talkbubble:after {position:absolute; top:9px; left:-5px; width:7px; height:9px; background:url(http://image.club5678.com/imgs/ilheayo_job/img01/img_ptn_msg.png) no-repeat; background-size:7px 9px; content:"";}
+#ptn_msg .ptn_talk_time {display:block; position:absolute; right:-59px; bottom:5px; color:#a2a2a2; font-size:11px;}
+#ptn_msg .comp_txt_line {position:absolute; top:-2px; left:55px;} /* 상대 메시지 _ 회사명 */
+#ptn_msg .comp_txt {color:#46526c; font-size:12px; font-weight:600;}
+#ptn_msg .btn_report {display:inline-block; width:30px; height:20px;} /* 상대 메시지 _ 신고버튼 */
+#ptn_msg .btn_report a {display:block; width:100%; height:100%; background:url(http://image.club5678.com/imgs/ilheayo_job/img01/img_btn_report.png) no-repeat center center; background-size:30px 16px; text-indent:-9999px;}
+@keyframes push02 {
+	50% {
+		transform:scale(0.9);
+	}
+	100% {
+		transform:scale(1);
+	}
+}
+@-webkit-keyframes push02 {
+	50% { -webkit-transform:scale(0.9); }
+	100% { -webkit-transform:scale(1); }
+}
+@-ms-keyframes push02 {
+	50% { -ms-transform:scale(0.9); }
+	100% { -ms-transform:scale(1); }
+}
+@-moz-keyframes push02 {
+	50% { -moz-transform:scale(0.9); }
+	100% { -moz-transform:scale(1); }
+}
+@-o-keyframes push02 {
+	50% { -o-transform:scale(0.9); }
+	100% { -o-transform:scale(1); }
+}
+#ptn_msg .btn_report a:active{animation:push02 0.2s ease-in-out 1;
+	-webkit-animation:push02 0.2s ease-in-out 1;
+	-ms-animation:push02 0.2s ease-in-out 1;
+	-moz-animation:push02 0.2s ease-in-out 1;
+	-o-animation:push02 0.2s ease-in-out 1;}
+#ptn_msg .ptn_phone_img {padding:2px 0; background:url(http://image.club5678.com/imgs/ilheayo_job/img01/img_btn_call.png) no-repeat left center; background-size:12px 17px;}
+/* 메시지 입력창 */
+.msg_input_wrap {position:relative; z-index:999; width:100%; height:43px; background:#fff;}
+.msg_input_wrap .msg_bar {display:block; width:95%; height:35px; margin:0 auto; margin-top:4px; background:#fff;}
+.msg_input_wrap .msg_bar .msg_text_box {width:100%; height:33px; border:1px solid #b5bec8; border-radius:3px; background:#fff;}
+.msg_input_wrap .msg_bar .msg_text_box li {float:left;}
+.msg_input_wrap .msg_bar .msg_text_box li:nth-child(1) {width:44px;}
+.msg_input_wrap .msg_bar .msg_text_box li:nth-child(2) {width:68%;}
+.msg_input_wrap .msg_bar .msg_text_box li:nth-child(3) {float:right; width:53px;}
+.msg_input_wrap .msg_bar .msg_text_box li a:active {background:rgba(0,0,0,.05);}
+.msg_input_wrap .msg_bar .btn_camera {display:block; height:22px; padding-top:5px; padding-bottom:6px; padding-left:10px; background:#fff;}
+.msg_input_wrap .msg_bar .ico_camera img {display:block; margin:9px 11px;}
+.msg_input_wrap .msg_bar .textarea {width:93%; height:19px; margin:7px 7px 7px 8px; border:none; color:#292929; font-size:13px; outline:none; border:none;}
+.msg_input_wrap .msg_bar .btn_send {display:block; height:13px; padding:11px 14px 9px 13px; background:#b5bec8; color:#fff; font-size:13px; text-align:center; line-height:10px;}
+.msg_input_wrap .msg_bar .btn_send_on {display:block; height:13px; padding:11px 14px 9px 13px; background:#0081d5; color:#fff; font-size:13px; text-align:center; line-height:10px;}
+@media (min-width:360px) {
+.msg_input_wrap .msg_bar .textarea { width:98% }
+}
+@media (min-width:375px) {
+.msg_input_wrap .msg_bar .textarea { width:100% }
+}
+@media (min-width:414px) {
+.msg_input_wrap .msg_bar .textarea { width:106% }
+}
+@media (min-width:768px) {
+.msg_input_wrap .msg_bar .textarea { width:125% }
+}
+@media (min-width:1600px) {
+.msg_input_wrap .msg_bar .textarea { width:138% }
+}
+
+.title_txt { display:block; margin:4px auto 0; width:98%; font-size:14px; color:#fffa80; padding:4px 10px; background-color:#384d7b; border:1px solid #d1e1f1; font-weight:600; }
+.title_txt .txt_line { display:inline-block; width:65%; text-overflow:ellipsis; white-space:nowrap; word-wrap:normal; overflow:hidden; vertical-align:bottom; color:#fff; }
+.title_txt .title_day { font-size:13px; font-weight:400; color:#fff; }
+
+/* 운영자 관련 추가 주철만 170221 */
+#msg_contents .photo_cs_badge{position:absolute; top:33px; left:3px; width:36px; height:18px; text-indent:-9999px;}
+#msg_contents .msg_cs_badge {background:url(http://image.club5678.com/imgs/ilheayo_job/img01/ico_cs_badge.png) no-repeat center center; background-size:36px 18px; }
+.cs_txt_col { color:#06C; font-size:12px; font-weight:600; }

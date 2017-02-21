@@ -1,0 +1,291 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<title>일해요!</title>
+<link href="http://image.club5678.com/imgs/@test/test_nanum.css" rel="stylesheet" type="text/css">
+<link href="css/jquery.mobile.reset.css" rel="stylesheet" type="text/css">
+<link href="css/ilh_default.css" rel="stylesheet" type="text/css">
+<link href="css/ilh_detail.css" rel="stylesheet" type="text/css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
+<script src="js/ilh_design.js"></script>
+</head>
+<body>
+<!---------------------------------------- 상세페이지(구인_타인) ---------------------------------------->
+<div id="wrap" class="pd_50">
+	<!-- 공통 헤더 -->
+	<div id="header" class="header_relative grd_blue">
+		<div class="header_btn btn_back">
+			<a href="#">뒤로</a>
+		</div>
+		<h1 class="sub_header2">구인 정보</h1>
+		<div class="header_btn btn_clse">
+			<a href="#">닫기</a>
+		</div>
+	</div>
+	<!-- // 공통 헤더 -->
+	<!-- 상단 영역 -->
+	<div id="dt_top_wrap">
+		<div class="scrap">
+			<a href="#">
+			<span class="scrap_img"></span>
+			<span class="scrap_txt ft_wt900">스크랩</span>
+			</a>
+		</div>
+		<div class="badge_line">
+			<div class="job_offer_badge02">
+				인력구함
+			</div>
+			<!-- 구인 뱃지 -->
+			<div class="reading_badge">
+				<a href="#">열람현황</a>
+			</div>
+			<!-- 열람 현황 -->
+		</div>
+		<div class="dt_top">
+			<h2 class="ft_wt900">뷔페 서빙 구합니다.</h2>
+			<h3>등록(수정)일 : 2016-11-13 10:09:12</h3>
+		</div>
+	</div>
+	<!-- // 상단 영역 -->
+	<!-- 정보 영역 -->
+	<div id="container">
+		<!-- 본인 소개 -->
+		<div class="intro_content">
+			<h4>본인 소개 및 작성글</h4>
+			<div class="intor_box">
+				 오뚜기 뷔페입니다. 별로 힘들지 않습니다<br/>
+				오늘내로 연락주세요. 오뚜기 뷔페입니다. 별로 힘들지 않습니다<br/>
+				오늘내로 연락주세요.
+			</div>
+		</div>
+		<!-- // 본인 소개 -->
+		<!-- 상세 정보 -->
+		<div class="dt_content">
+			<h4>상세정보</h4>
+			<div class="btn_report">
+				<a href="#">신고</a>
+			</div>
+			<ul class="dt_u">
+				<li>
+				<div class="dt_l">
+					상호(이름)
+				</div>
+				<div class="dt_r company_color ft_wt700">
+					오뚜기뷔페
+				</div>
+				</li>
+				<li>
+				<div class="dt_l">
+					급여
+				</div>
+				<div class="dt_r">
+					<span class="day_badge">일당</span><span class="ft_wt900">120,000원</span>
+				</div>
+				</li>
+				<li>
+				<div class="dt_l">
+					직업 분야
+				</div>
+				<div class="dt_r">
+					요식업 > 서빙
+				</div>
+				</li>
+				<li>
+				<div class="dt_l">
+					채용 인원
+				</div>
+				<div class="dt_r">
+					남자 0명, 여자 0명
+				</div>
+				</li>
+				<li>
+				<div class="dt_l">
+					채용 기간
+				</div>
+				<div class="dt_r">
+					11/12 ~ 12/11
+				</div>
+				</li>
+				<li>
+				<div class="dt_l">
+					연락처
+				</div>
+				<div class="dt_r">
+					010-1111-2222
+				</div>
+				</li>
+				<li>
+				<div class="dt_l">
+					근무 지역
+				</div>
+				<div class="dt_r">
+					서울 > 강남구
+				</div>
+				</li>
+				<li>
+				<!-- 날씨 정보 -->
+				<div class="wth_roca_wrap">
+					<span class="wth_roca">전북 &gt; 전주시 덕진구</span>
+					<a href="#">
+					<img src="http://image.club5678.com/imgs/ilheayo_job/weather/ico_wth_01.png"><span class="wth_img_txt">오전 <b>5˚c</b><br>
+					 맑음</span>
+					</a>
+				</div>
+				<!-- // 날씨 정보 -->
+				<div class="dt_l" style="margin-bottom:5px;">
+					상세위치
+				</div>
+				<!-- 다음 지도 -->
+				<div class="dt_map_wrap">
+					<div id="map" style="width:100%;height:200px;">
+					</div>
+					<div class="map_title ft_wt700">
+						<span>서울 강남구 역삼동</span>
+						<a href="#">지도 크게보기</a>
+					</div>
+					<div class="zoom_control">
+						<span onclick="zoomIn()">확대</span>
+						<span onclick="zoomOut()">축소</span>
+					</div>
+				</div>
+				<!-- // 다음 지도 -->
+				<div class="dt_adress">
+					[상세주소] 서울 강남구 역삼동 1234-1
+				</div>
+				</li>
+			</ul>
+			<!-- 연락 버튼 -->
+			<ul class="dt_btn_box">
+				<li>
+				<a href="#">
+				<span class="dt_btn btn_white btn_grd_white"><span>메세지</span></span>
+				</a>
+				</li>
+				<li>
+				<a href="#">
+				<span class="dt_btn btn_white btn_grd_white"><span>전화하기</span></span>
+				</a>
+				</li>
+			</ul>
+			<!-- // 연락 버튼 -->
+			<p class="ft_wt700">
+				모든 연락은 무료입니다!
+			</p>
+		</div>
+		<!-- // 상세 정보 -->
+		<!-- 사진 정보 -->
+		<div class="photo_content">
+			<h4>사진정보</h4>
+			<div class="dt_photo_wrap">
+				<a href="#">
+				<div class="photo_clip">
+					<img src="http://image.club5678.com/imgs/ilheayo_job/img01/img_001.jpg">
+				</div>
+				</a>
+				<a href="#">
+				<div class="photo_clip">
+					<img src="http://image.club5678.com/imgs/ilheayo_job/img01/img_001.jpg">
+				</div>
+				</a>
+				<a href="#">
+				<div class="photo_clip">
+					<img src="http://image.club5678.com/imgs/ilheayo_job/img01/img_001.jpg">
+				</div>
+				</a>
+				<a href="#">
+				<div class="photo_clip">
+					<img src="http://image.club5678.com/imgs/ilheayo_job/img01/img_001.jpg">
+				</div>
+				</a>
+				<a href="#">
+				<div class="photo_clip">
+					<img src="http://image.club5678.com/imgs/ilheayo_job/img01/img_001.jpg">
+				</div>
+				</a>
+				<a href="#">
+				<div class="photo_clip">
+					<img src="http://image.club5678.com/imgs/ilheayo_job/img01/img_001.jpg">
+				</div>
+				</a>
+				<a href="#">
+				<div class="photo_clip">
+					<img src="http://image.club5678.com/imgs/ilheayo_job/img01/img_001.jpg">
+				</div>
+				</a>
+				<a href="#">
+				<div class="photo_clip">
+					<img src="http://image.club5678.com/imgs/ilheayo_job/img01/img_001.jpg">
+				</div>
+				</a>
+				<a href="#">
+				<div class="photo_clip">
+					<img src="http://image.club5678.com/imgs/ilheayo_job/img01/img_001.jpg">
+				</div>
+				</a>
+				<a href="#">
+				<div class="photo_clip">
+					<img src="http://image.club5678.com/imgs/ilheayo_job/img01/img_001.jpg">
+				</div>
+				</a>
+			</div>
+		</div>
+		<!-- // 사진 정보 -->
+	</div>
+	<!-- // 정보 영역 -->
+</div>
+<!-- 광고 삽입 부분 -->
+
+<div id="ad_zone">
+<a href="#">
+	<p style="font-size:18px; font-weight:700; color:#fff; text-align:center;">광고영역</p>
+</a>
+</div>
+<!-- // 광고 삽입 부분 -->
+</body>
+<script type="text/javascript" src="http://apis.daum.net/maps/maps3.js?apikey=2bf10f5aceee592c1dad1bef13a9655e"></script><!-- 임시API 키번호 -->
+<script type="text/javascript">
+var mapContainer = document.getElementById('map'), // 지도를 표시할 div
+    mapOption = {
+        center: new daum.maps.LatLng(37.54699, 127.09598), // 지도의 중심좌표
+        level: 5 // 지도의 확대 레벨
+    };
+
+var map = new daum.maps.Map(mapContainer, mapOption); // 지도를 생성합니다
+
+
+// 지도 확대, 축소 컨트롤에서 확대 버튼을 누르면 호출되어 지도를 확대하는 함수입니다
+function zoomIn() {
+    map.setLevel(map.getLevel() - 1);
+}
+
+// 지도 확대, 축소 컨트롤에서 축소 버튼을 누르면 호출되어 지도를 확대하는 함수입니다
+function zoomOut() {
+    map.setLevel(map.getLevel() + 1);
+}
+
+// 마우스 드래그로 지도 이동 막음
+map.setDraggable(false);
+
+var imageSrc = 'http://image.club5678.com/imgs/ilheayo_job/img01/ico_map_region.png', // 마커이미지의 주소입니다
+    imageSize = new daum.maps.Size(43, 45), // 마커이미지의 크기입니다
+    imageOption = {offset: new daum.maps.Point(43, 45)}; // 마커이미지의 옵션입니다. 마커의 좌표와 일치시킬 이미지 안에서의 좌표를 설정합니다.
+
+// 마커의 이미지정보를 가지고 있는 마커이미지를 생성합니다
+var markerImage = new daum.maps.MarkerImage(imageSrc, imageSize, imageOption),
+    markerPosition = new daum.maps.LatLng(37.54699, 127.09598); // 마커가 표시될 위치입니다
+
+// 마커를 생성합니다
+var marker = new daum.maps.Marker({
+    position: markerPosition,
+    image: markerImage // 마커이미지 설정
+});
+
+// 마커가 지도 위에 표시되도록 설정합니다
+marker.setMap(map);
+</script>
+</html>

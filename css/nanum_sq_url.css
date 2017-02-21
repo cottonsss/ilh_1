@@ -1,0 +1,49 @@
+@charset "utf-8";
+
+/*
+ * Hangeul Nanum Font
+*/
+
+@font-face {
+ font-family: 'NanumSquare';
+ src: url('./font/NanumSquareR.eot'),
+ src: url('./font/NanumSquareR.eot?#iefix') format('embedded-opentype'),
+      url('./font/NanumSquareR.woff') format('woff'),
+      url('./font/NanumSquareR.ttf') format('truetype');
+}
+@font-face {
+ font-family: 'NanumSquareBold';
+ src: url('./font/NanumSquareB.eot');
+ src: url('./font/NanumSquareB.eot?#iefix') format('embedded-opentype'),
+      url('./font/NanumSquareB.woff') format('woff'),
+      url('./font/NanumSquareB.ttf') format('truetype');
+}
+
+/*
+ * Nanum Square Web Fonts
+ * https://github.com/hiun/NanumSquare
+ * Copyright (c) 2010, NAVER Corporation (http://www.nhncorp.com)
+ */
+@font-face {
+  font-family: 'NanumSquare';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./font/nanum/NanumSquareR.eot');
+  src: local('Nanum Square Regular'),
+       local('NanumSquareR'),
+       url('./font/NanumSquareR.eot?#iefix') format('embedded-opentype'),
+       url('./font/NanumSquareR.woff') format('woff'),
+       url('./font/NanumSquareR.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'NanumSquare';
+  font-style: bold;
+  font-weight: 700;
+  src: url('./font/NanumSquareB.eot');
+  src: local('Nanum Square Bold'),
+       local('NanumSquareB'),
+       url('./font/NanumSquareB.eot?#iefix') format('embedded-opentype'),
+       url('./font/NanumSquareB.woff') format('woff'),
+       url('./font/NanumSquareB.ttf') format('truetype');
+}

@@ -1,0 +1,344 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<title>일해요!</title>
+<link href="http://image.club5678.com/imgs/@test/test_nanum.css" rel="stylesheet" type="text/css">
+<link href="css/jquery.mobile.reset.css" rel="stylesheet" type="text/css">
+<link href="css/ilh_default.css" rel="stylesheet" type="text/css">
+<link href="css/ilh_detail.css" rel="stylesheet" type="text/css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
+<script src="js/ilh_design.js"></script>
+</head>
+<body>
+<!---------------------------------------- 글쓰기(구인) ---------------------------------------->
+<div id="wrap">
+	<!-- 공통 헤더 -->
+	<div id="header" class="header_relative grd_blue">
+		<div class="header_btn btn_back">
+			<a href="#">뒤로</a>
+		</div>
+		<h1 class="sub_header2">글쓰기(구인)</h1>
+	</div>
+	<!-- // 공통 헤더 -->
+	<div id="container">
+		<div class="wt_wrap">
+			<ul class="wt_u">
+				<li>
+				<div class="wt_l">
+					제목
+				</div>
+				<div class="wt_r">
+					<input type="text" placeholder="최소 5자 ~ 최대 20자 입력 가능" class="wt_text"/>
+				</div>
+				</li>
+				<li>
+				<div class="wt_title">
+					내용 <span>(※ 구체적 구직 내용을 입력하세요. 최대 300자)</span>
+				</div>
+				<div class="wt_area">
+					<textarea name="text" cols="50" rows="3"></textarea>
+				</div>
+				</li>
+				<li>
+				<div class="wt_l">
+					상호(이름)
+				</div>
+				<div class="wt_r">
+					<input type="text" placeholder="한글,영문 2자 ~ 8자 입력 가능" class="wt_text"/>
+				</div>
+				</li>
+				<li>
+				<div class="wt_l">
+					연락처
+				</div>
+				<div class="wt_r">
+					<input type="text" placeholder="'-'없이 입력하세요" class="wt_text"/>
+				</div>
+				</li>
+				<li>
+				<div class="wt_l">
+					채용 인원
+				</div>
+				<div class="wt_r">
+					<div class="slct_man grd_divide">
+						<select>
+							<option>남자</option>
+							<option>0명</option>
+							<option>1명</option>
+							<option>2명</option>
+							<option>3명</option>
+							<option>4명</option>
+							<option>5명</option>
+							<option>6명</option>
+							<option>7명</option>
+							<option>8명</option>
+							<option>9명</option>
+							<option>10명</option>
+						</select>
+					</div>
+					<div class="slct_woman grd_divide">
+						<select>
+							<option>여자</option>
+							<option>0명</option>
+							<option>1명</option>
+							<option>2명</option>
+							<option>3명</option>
+							<option>4명</option>
+							<option>5명</option>
+							<option>6명</option>
+							<option>7명</option>
+							<option>8명</option>
+							<option>9명</option>
+							<option>10명</option>
+						</select>
+					</div>
+				</div>
+				</li>
+				<li>
+				<div class="wt_l">
+					채용 기간
+				</div>
+				<div class="wt_r">
+					<div class="slct_first_day grd_divide">
+						<input type="date"/>
+					</div>
+					<div class="day_center ft_wt700">
+						~
+					</div>
+					<div class="slct_last_day grd_divide">
+						<input type="date"/>
+					</div>
+					<div class="always_chk">
+						<input type="checkbox" id="always_chk" class="chk">
+						<label for="always_chk" class="chk_lb">상시구인</label>
+					</div>
+				</div>
+				</li>
+				<li>
+				<div class="wt_l">
+					직업 분야
+				</div>
+				<div class="wt_r">
+					<a href="#" class="slct_pop grd_divide">
+					<span>직업분야를 선택하세요</span>
+					</a>
+				</div>
+				</li>
+				<li>
+				<div class="wt_l">
+					급여
+				</div>
+				<div class="wt_r">
+					<div class="slct_pay grd_divide">
+						<select>
+							<option>파트타임</option>
+							<option>일당</option>
+							<option>월급</option>
+							<option>연봉</option>
+						</select>
+					</div>
+					<div class="text_pay">
+						<input type="text" class="wt_text"/>
+					</div>
+				</div>
+				</li>
+				<li>
+				<div class="wt_l">
+					근무 지역
+				</div>
+				<div class="wt_r">
+					<a href="#" class="slct_pop grd_divide">
+					<span>근무 지역을 선택하세요</span>
+					</a>
+				</div>
+				</li>
+				<li>
+				<div class="wt_title">
+					근무지 위치 설정
+				</div>
+				<!-- 다음 지도 -->
+				<div class="dt_map_wrap">
+					<div class="map_title ft_wt700">
+						<span>서울 강남구 역삼동</span>
+						<a href="#">위치 직접선택</a>
+					</div>
+					<div class="map_gps">
+						<div>
+							 지도 위치 선택은 GPS ON(위치서비스 설정) 상태에서만 이용 가능합니다. 아래 '설정'을 터치하셔서 일해요의 위치서비스를 이용하세요. 설정없이 이용시 임의 지역으로 위치가 선택됩니다. <a href="#">GPS 설정하기</a>
+						</div>
+					</div>
+					<!--<div id="map" style="width:100%;height:200px;"></div>
+                    	<div class="zoom_control">
+                        	<span onclick="zoomIn()">확대</span>
+                            <span onclick="zoomOut()">축소</span>
+                        </div>-->
+				</div>
+				<!-- // 다음 지도 -->
+				<div class="wt_notice">
+					* 정확한 위치를 설정 시 신뢰도가 올라갑니다.
+				</div>
+				</li>
+				<li style="padding-top:3px;">
+				<div class="wt_title">
+					사진 첨부 <span>(※ 선택사항 - 최대 10장 등록가능)</span>
+				</div>
+				<a href="#" class="wt_photo_plus"></a>
+				<div class="photo_content">
+					<ul class="wt_photo_wrap">
+						<li>
+						<div class="photo_clip">
+							<a href="#">
+							<img src="http://image.club5678.com/imgs/ilheayo_job/img01/img_001.jpg">
+							</a>
+						</div>
+						<div class="photo_del">
+							<a href="#">삭제</a>
+						</div>
+						</li>
+						<li>
+						<div class="photo_clip">
+							<a href="#">
+							<img src="http://image.club5678.com/imgs/ilheayo_job/img01/img_001.jpg">
+							</a>
+						</div>
+						<div class="photo_del">
+							<a href="#">삭제</a>
+						</div>
+						</li>
+						<li>
+						<div class="photo_clip">
+							<a href="#"></a>
+						</div>
+						</li>
+						<li>
+						<div class="photo_clip">
+							<a href="#"></a>
+						</div>
+						</li>
+						<li>
+						<div class="photo_clip">
+							<a href="#"></a>
+						</div>
+						</li>
+						<li>
+						<div class="photo_clip">
+							<a href="#"></a>
+						</div>
+						</li>
+						<li>
+						<div class="photo_clip">
+							<a href="#"></a>
+						</div>
+						</li>
+						<li>
+						<div class="photo_clip">
+							<a href="#"></a>
+						</div>
+						</li>
+						<li>
+						<div class="photo_clip">
+							<a href="#"></a>
+						</div>
+						</li>
+						<li>
+						<div class="photo_clip">
+							<a href="#"></a>
+						</div>
+						</li>
+					</ul>
+				</div>
+				</li>
+				<li style="margin-top:8px;">
+				<div class="wt_help ft_wt700">
+					<input type="checkbox" id="wt_help" class="chk">
+					<label for="wt_help" class="chk_lb"><span class="help_badge">급구</span> 마크 이용하기</label>
+					<a href="#" class="help_btn">
+					<span class="wt_btn btn_white btn_grd_white">자세히</span>
+					</a>
+				</div>
+				<!-- 긴급구인 레이어 -->
+				<div class="help_layer box_shadow1">
+					<h2>
+					<span class="help_badge">급구</span> 마크 이용하기 <span class="grd_main"></span>
+					</h2>
+					<div class="layer_txt">
+						 긴급구인을 체크한 뒤 구인글을 등록하면<br/>
+						[급구]뱃지가 달려 글의 주목도가 올라가며,<br/>
+						긴급 구인 메뉴에도 자동 등록됩니다.<br/>
+						<span class="ft_wt700">
+						※ 단, 구인 마감 일자가<br/>
+						2일 이내일 경우에만 이용할 수 있습니다. </span>
+					</div>
+				</div>
+				<!-- // 긴급구인 레이어 -->
+				</li>
+			</ul>
+			<!-- 수정 버튼 -->
+			<ul class="wt_btn_box01">
+				<li>
+				<a href="#">
+				<span class="wt_btn btn_white btn_grd_white">수정</span>
+				</a>
+				</li>
+				<li>
+				<a href="#">
+				<span class="wt_btn btn_white btn_grd_white">삭제</span>
+				</a>
+				</li>
+				<li>
+				<a href="#">
+				<span class="wt_btn btn_blue btn_grd_blue">채용완료</span>
+				</a>
+				</li>
+			</ul>
+			<!-- // 수정 버튼 -->
+		</div>
+	</div>
+</div>
+</body>
+<script type="text/javascript" src="http://apis.daum.net/maps/maps3.js?apikey=2bf10f5aceee592c1dad1bef13a9655e"></script><!-- 임시API 키번호 -->
+<script type="text/javascript">
+var mapContainer = document.getElementById('map'), // 지도를 표시할 div
+    mapOption = {
+        center: new daum.maps.LatLng(37.54699, 127.09598), // 지도의 중심좌표
+        level: 5 // 지도의 확대 레벨
+    };
+
+var map = new daum.maps.Map(mapContainer, mapOption); // 지도를 생성합니다
+
+
+// 지도 확대, 축소 컨트롤에서 확대 버튼을 누르면 호출되어 지도를 확대하는 함수입니다
+function zoomIn() {
+    map.setLevel(map.getLevel() - 1);
+}
+
+// 지도 확대, 축소 컨트롤에서 축소 버튼을 누르면 호출되어 지도를 확대하는 함수입니다
+function zoomOut() {
+    map.setLevel(map.getLevel() + 1);
+}
+
+// 마우스 드래그로 지도 이동 막음
+map.setDraggable(false);
+
+var imageSrc = 'http://image.club5678.com/imgs/ilheayo_job/img01/ico_map_here.png', // 마커이미지의 주소입니다
+    imageSize = new daum.maps.Size(43, 45), // 마커이미지의 크기입니다
+    imageOption = {offset: new daum.maps.Point(43, 45)}; // 마커이미지의 옵션입니다. 마커의 좌표와 일치시킬 이미지 안에서의 좌표를 설정합니다.
+
+// 마커의 이미지정보를 가지고 있는 마커이미지를 생성합니다
+var markerImage = new daum.maps.MarkerImage(imageSrc, imageSize, imageOption),
+    markerPosition = new daum.maps.LatLng(37.54699, 127.09598); // 마커가 표시될 위치입니다
+
+// 마커를 생성합니다
+var marker = new daum.maps.Marker({
+    position: markerPosition,
+    image: markerImage // 마커이미지 설정
+});
+
+// 마커가 지도 위에 표시되도록 설정합니다
+marker.setMap(map);
+</script>
+</html>

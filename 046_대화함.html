@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<title>일해요!</title>
+<link href="http://image.club5678.com/imgs/@test/test_nanum.css" rel="stylesheet" type="text/css">
+<link href="css/jquery.mobile.reset.css" rel="stylesheet" type="text/css">
+<link href="css/ilh_default.css" rel="stylesheet" type="text/css">
+<link href="css/ilh_my_menu.css" rel="stylesheet" type="text/css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
+<script src="js/ilh_design.js"></script>
+</head>
+<body>
+<div id="wrap" class="pd_50">
+	<!-- 공통 헤더 -->
+	<div id="header" class="header_relative grd_main">
+		<div class="header_btn btn_back">
+			<a href="#">뒤로</a>
+		</div>
+		<h1 class="sub_header2">대화 (메시지, 전화) 함</h1>
+	</div>
+	<!-- // 공통 헤더 -->
+	<!-- 상단 공지 -->
+	<div id="notice_content" class="box_shadow1">
+		<p>
+			 ※ 메시지,전화,영상통화 내역을 확인할 수 있습니다.
+		</p>
+		<p>
+			 ※ 상대가 서비스 탈퇴시 대화글은 자동 삭제됩니다.
+		</p>
+	</div>
+	<!-- // 상단 공지 -->
+	<div id="container">
+		<!-- 상단 전체선택/삭제 -->
+		<div class="input_line">
+			<div class="chk_wrap">
+				<input type="checkbox" id="msg_all_del" class="chk">
+				<label for="msg_all_del" class="chk_lb msgbox_lb"></label>
+			</div>
+			<div class="btn_wrap_box">
+				<a href="#">
+				<div class="btn_white btn_grd_white">
+					 선택삭제
+				</div>
+				</a>
+			</div>
+		</div>
+		<!-- // 상단 전체선택/삭제 -->
+		<!-- 리스트 시작 -->
+		<div class="content_msg_wrap">
+			<!-- 날짜 구분선 -->
+			<ul class="day_warp">
+				<p>
+					 2016월 11월 30일
+				</p>
+				<li class="day_msg_slot">
+				<div class="chk_wrap_list">
+					<input type="checkbox" id="msg_del_01" class="chk">
+					<label for="msg_del_01" class="chk_lb"></label>
+				</div>
+				<!-- 구인사진 -->
+				<div class="msg_photo">
+					<div class="photo_clip">
+						<img src="http://image.club5678.com/imgs/ilheayo_job/img01/ava_woman.png" class="mem_photo">
+					</div>
+					<span class="photo_badge msg_job_offer_badge">구인</span>
+					<!-- 구인 뱃지 -->
+				</div>
+				<!-- // 구인사진 -->
+				<ul>
+					<li>대명연구소하하하<span>(경남 &gt; 창원시마산을구)</span></li>
+					<li>열심히 하겠습니다!!</li>
+				</ul>
+				<span class="msg_txt_time">오전12:10</span>
+				<span class="badge msg_num_pst"><span>10</span></span>
+				</li>
+				<li class="day_msg_slot">
+				<div class="chk_wrap_list">
+					<input type="checkbox" id="msg_del_02" class="chk">
+					<label for="msg_del_02" class="chk_lb"></label>
+				</div>
+				<!-- 구인사진 -->
+				<div class="msg_photo">
+					<div class="photo_clip">
+						<img src="http://image.club5678.com/imgs/ilheayo_job/img01/ava_woman.png" class="mem_photo">
+					</div>
+					<span class="photo_badge msg_find_job_badge">구직</span>
+					<!-- 구직 뱃지 -->
+				</div>
+				<!-- // 구인사진 -->
+				<ul>
+					<li>대명연구소하하하<span>(경남 &gt; 창원시마산을구)</span></li>
+					<li><span class="call_time_txt">음성전화 <span>01:22</span></span></li>
+				</ul>
+				<span class="msg_txt_time">오전12:10</span>
+				<span class="badge msg_num_pst"><span>1</span></span>
+				</li>
+			</ul>
+			<!-- // 날짜 구분선 -->
+			<!-- 날짜 구분선 -->
+			<ul class="day_warp">
+				<p>
+					 2016월 11월 30일
+				</p>
+				<li class="day_msg_slot">
+				<div class="chk_wrap_list">
+					<input type="checkbox" id="msg_del_03" class="chk">
+					<label for="msg_del_03" class="chk_lb"></label>
+				</div>
+				<!-- 구인사진 -->
+				<div class="msg_photo">
+					<div class="photo_clip">
+						<img src="http://image.club5678.com/imgs/ilheayo_job/img01/ava_woman.png" class="mem_photo">
+					</div>
+					<span class="photo_badge msg_job_offer_badge">구직</span>
+					<!-- 구직 뱃지 -->
+				</div>
+				<!-- // 구인사진 -->
+				<ul>
+					<li>김간난(여/55세)<span>(제주 &gt; 서귀포구)</span></li>
+					<li>감사합니다 뽑아주셔서 감사합니다 감사합니다감사합니다 뽑아주셔서 감사합니다 감사합니다</li>
+				</ul>
+				<span class="msg_txt_time">오전12:10</span>
+				<span class="badge msg_num_pst"><span>5</span></span>
+				</li>
+				<li class="day_msg_slot">
+				<div class="chk_wrap_list">
+					<input type="checkbox" id="msg_del_04" class="chk">
+					<label for="msg_del_04" class="chk_lb"></label>
+				</div>
+				<!-- 구인사진 -->
+				<div class="msg_photo">
+					<div class="photo_clip">
+						<img src="http://image.club5678.com/imgs/ilheayo_job/img01/ava_woman.png" class="mem_photo">
+					</div>
+					<span class="photo_badge msg_find_job_badge">구직</span>
+					<!-- 구직 뱃지 -->
+				</div>
+				<!-- // 구인사진 -->
+				<ul>
+					<li>홍길동(남/41세)<span>(광주 &gt; 동구)</span></li>
+					<li><span class="call_time_txt">음성전화 <span>01:22</span></span></li>
+				</ul>
+				<span class="msg_txt_time">오전12:10</span>
+				<span class="badge msg_num_pst"><span>4</span></span>
+				</li>
+				<li class="day_msg_slot">
+				<div class="chk_wrap_list">
+					<input type="checkbox" id="msg_del_05" class="chk">
+					<label for="msg_del_05" class="chk_lb"></label>
+				</div>
+				<!-- 구인사진 -->
+				<div class="msg_photo">
+					<div class="photo_clip">
+						<img src="http://image.club5678.com/imgs/ilheayo_job/img01/ava_woman.png" class="mem_photo">
+					</div>
+					<span class="photo_badge msg_job_offer_badge">구인</span>
+					<!-- 구인 뱃지 -->
+				</div>
+				<!-- // 구인사진 -->
+				<ul>
+					<li>이영희(여/24세)<span>(서울 &gt; 강남구)</span></li>
+					<li>열심히 하겠습니다!!</li>
+				</ul>
+				<span class="msg_txt_time">오전12:10</span>
+				<span class="badge msg_num_pst"><span>10</span></span>
+				</li>
+				<li class="day_msg_slot">
+				<div class="chk_wrap_list">
+					<input type="checkbox" id="msg_del_06" class="chk">
+					<label for="msg_del_06" class="chk_lb"></label>
+				</div>
+				<!-- 구인사진 -->
+				<div class="msg_photo">
+					<div class="photo_clip">
+						<img src="http://image.club5678.com/imgs/ilheayo_job/img01/ava_woman.png" class="mem_photo">
+					</div>
+					<span class="photo_badge msg_find_job_badge">구직</span>
+					<!-- 구직 뱃지 -->
+				</div>
+				<!-- // 구인사진 -->
+				<ul>
+					<li>좋아요건설<span>(부산 &gt; 해운대구)</span></li>
+					<li><span class="call_time_txt">음성전화 <span>01:22</span></span></li>
+				</ul>
+				<span class="msg_txt_time">오전12:10</span>
+				<span class="badge msg_num_pst"><span>1</span></span>
+				</li>
+			</ul>
+			<!-- // 날짜 구분선 -->
+		</div>
+		<!-- //리스트 끝 -->
+	</div>
+</div>
+
+<!-- 광고 삽입 부분 -->
+<div id="ad_zone">
+<a href="#">
+	<p style="font-size:18px; font-weight:700; color:#fff; text-align:center;">광고영역</p>
+</a>
+</div>
+<!-- // 광고 삽입 부분 -->
+</body>
+</html>

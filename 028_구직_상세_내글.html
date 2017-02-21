@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<title>일해요!</title>
+<link href="http://image.club5678.com/imgs/@test/test_nanum.css" rel="stylesheet" type="text/css">
+<link href="css/jquery.mobile.reset.css" rel="stylesheet" type="text/css">
+<link href="css/ilh_default.css" rel="stylesheet" type="text/css">
+<link href="css/ilh_detail.css" rel="stylesheet" type="text/css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
+<script src="js/ilh_design.js"></script>
+</head>
+<body>
+<!---------------------------------------- 상세페이지(구직_내글) ---------------------------------------->
+<div id="wrap" class="pd_50">
+	<!-- 공통 헤더 -->
+	<div id="header" class="header_relative grd_green">
+		<div class="header_btn btn_back">
+			<a href="#">뒤로</a>
+		</div>
+		<h1 class="sub_header2">구직 정보</h1>
+		<div class="header_btn btn_clse">
+			<a href="#">닫기</a>
+		</div>
+	</div>
+	<!-- // 공통 헤더 -->
+	<!-- 상단 영역 -->
+	<div id="dt_top_wrap">
+		<div class="badge_line">
+			<div class="badge_find_nm">
+				일구함
+			</div>
+			<!-- 구직 뱃지 -->
+			<div class="reading_badge">
+				<a href="#">열람현황</a>
+			</div>
+			<!-- 열람 현황 -->
+		</div>
+		<div class="dt_top">
+			<h2 class="ft_wt900">미장 경력 3년입니다 !!!</h2>
+			<h3>등록(수정)일 : 2016-11-13 10:09:12</h3>
+		</div>
+	</div>
+	<!-- // 상단 영역 -->
+	<!-- 정보 영역 -->
+	<div id="container">
+		<!-- 본인 소개 -->
+		<div class="intro_content">
+			<h4>본인 소개 및 작성글</h4>
+			<div class="intor_box">
+				 평평하게 아주 잘 깝니다. 일 15만 이상만 작업합니다. 오후 3시까지 메시지 남겨주세요
+			</div>
+		</div>
+		<!-- // 본인 소개 -->
+		<!-- 상세 정보 -->
+		<div class="dt_content">
+			<h4>상세정보</h4>
+			<ul class="dt_u">
+				<li>
+				<div class="dt_l">
+					이름
+				</div>
+				<div class="dt_r woman_color ft_wt700">
+					김개인 (여자/33세)
+				</div>
+				</li>
+				<li>
+				<div class="dt_l">
+					직업 분야
+				</div>
+				<div class="dt_r">
+					건설직 > 하스리(직업명:하스리공)<br/>단순직 > 창고관리(직업명:지게차기사)
+				</div>
+				</li>
+				<li>
+				<div class="dt_l">
+					경력
+				</div>
+				<div class="dt_r career_color">
+					10년
+				</div>
+				</li>
+				<li>
+				<div class="dt_l">
+					연락처
+				</div>
+				<div class="dt_r">
+					010-1111-2222
+				</div>
+				</li>
+				<li>
+				<div class="dt_l">
+					근무 가능 지역
+				</div>
+				<div class="dt_r">
+					전국가능
+				</div>
+				</li>
+				<li>
+				<div class="dt_l">
+					현 거주지역
+				</div>
+				<div class="dt_r">
+					서울 > 강남구
+				</div>
+				</li>
+				<li>
+				<div class="dt_l" style="margin-bottom:5px;">
+					상세위치
+				</div>
+				<div class="dt_r">
+					<div class="chk_wrap">
+						<div class="chk_switch">
+							<span class="chk_on">ON</span>
+							<span class="chk_off">OFF</span>
+							<span class="chk_handle"></span>
+						</div>
+						<input type="checkbox">
+					</div>
+				</div>
+				<!-- 다음 지도 -->
+                    <div class="dt_map_wrap">
+                        <div class="map_title ft_wt700">
+                        	<span>서울 강남구 역삼동</span>
+                            <a href="#">위치 직접선택</a>
+                        </div>
+                        <!--<div class="map_gps">
+                        	<div>
+                                지도 위치 선택은 GPS ON(위치서비스 설정) 상태에서만 이용 가능합니다.
+                                아래 '설정'을 터치하셔서 일해요의 위치서비스를 이용하세요.
+                                설정없이 이용시 임의 지역으로 위치가 선택됩니다.
+                                <a href="#">GPS 설정하기</a>
+                            </div>
+                        </div>-->
+                        <div id="map" style="width:100%;height:200px;"></div>
+                    	<div class="zoom_control">
+                        	<span onclick="zoomIn()">확대</span>
+                            <span onclick="zoomOut()">축소</span>
+                        </div>
+          			</div>
+                    <!-- // 다음 지도 -->
+				<div class="dt_adress">
+					[상세주소] 서울 강남구 역삼동 1234-1
+				</div>
+				</li>
+			</ul>
+			<!-- 수정 버튼 -->
+			<ul class="dtmy_btn_box">
+				<li>
+				<a href="#">
+				<span class="dt_btn btn_white btn_grd_white">수정하기</span>
+				</a>
+				</li>
+				<li>
+				<a href="#">
+				<span class="dt_btn btn_blue btn_grd_blue">구직완료</span>
+				</a>
+				</li>
+			</ul>
+			<!-- // 수정 버튼 -->
+		</div>
+		<!-- // 상세 정보 -->
+		<!-- 사진 정보 -->
+		<div class="photo_content">
+			<h4>사진정보</h4>
+			<div class="dt_photo_wrap">
+				<a href="#">
+				<div class="photo_clip">
+					<img src="http://image.club5678.com/imgs/ilheayo_job/img01/img_003.jpg">
+				</div>
+				</a>
+				<a href="#">
+				<div class="photo_clip">
+					<img src="http://image.club5678.com/imgs/ilheayo_job/img01/img_003.jpg">
+				</div>
+				</a>
+				<a href="#">
+				<div class="photo_clip">
+					<img src="http://image.club5678.com/imgs/ilheayo_job/img01/img_003.jpg">
+				</div>
+				</a>
+			</div>
+		</div>
+		<!-- // 사진 정보 -->
+	</div>
+	<!-- // 정보 영역 -->
+</div>
+<!-- 광고 삽입 부분 -->
+<div id="ad_zone">
+<a href="#">
+	<p style="font-size:18px; font-weight:700; color:#fff; text-align:center;">광고영역</p>
+</a>
+</div>
+<!-- // 광고 삽입 부분 -->
+</body>
+<script type="text/javascript" src="http://apis.daum.net/maps/maps3.js?apikey=2bf10f5aceee592c1dad1bef13a9655e"></script><!-- 임시API 키번호 -->
+<script type="text/javascript">
+var mapContainer = document.getElementById('map'), // 지도를 표시할 div
+    mapOption = {
+        center: new daum.maps.LatLng(37.54699, 127.09598), // 지도의 중심좌표
+        level: 5 // 지도의 확대 레벨
+    };
+
+var map = new daum.maps.Map(mapContainer, mapOption); // 지도를 생성합니다
+
+
+// 지도 확대, 축소 컨트롤에서 확대 버튼을 누르면 호출되어 지도를 확대하는 함수입니다
+function zoomIn() {
+    map.setLevel(map.getLevel() - 1);
+}
+
+// 지도 확대, 축소 컨트롤에서 축소 버튼을 누르면 호출되어 지도를 확대하는 함수입니다
+function zoomOut() {
+    map.setLevel(map.getLevel() + 1);
+}
+
+// 마우스 드래그로 지도 이동 막음
+map.setDraggable(false);
+
+var imageSrc = 'http://image.club5678.com/imgs/ilheayo_job/img01/ico_map_person.png', // 마커이미지의 주소입니다
+    imageSize = new daum.maps.Size(43, 45), // 마커이미지의 크기입니다
+    imageOption = {offset: new daum.maps.Point(43, 45)}; // 마커이미지의 옵션입니다. 마커의 좌표와 일치시킬 이미지 안에서의 좌표를 설정합니다.
+
+// 마커의 이미지정보를 가지고 있는 마커이미지를 생성합니다
+var markerImage = new daum.maps.MarkerImage(imageSrc, imageSize, imageOption),
+    markerPosition = new daum.maps.LatLng(37.54699, 127.09598); // 마커가 표시될 위치입니다
+
+// 마커를 생성합니다
+var marker = new daum.maps.Marker({
+    position: markerPosition,
+    image: markerImage // 마커이미지 설정
+});
+
+// 마커가 지도 위에 표시되도록 설정합니다
+marker.setMap(map);
+</script>
+</html>

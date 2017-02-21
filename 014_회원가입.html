@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<title>일해요!</title>
+<link href="http://image.club5678.com/imgs/@test/test_nanum.css" rel="stylesheet" type="text/css">
+<link href="css/jquery.mobile.reset.css" rel="stylesheet" type="text/css">
+<link href="css/ilh_default.css" rel="stylesheet" type="text/css">
+<link href="css/ilh_login.css" rel="stylesheet" type="text/css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
+<script src="js/ilh_design.js"></script>
+</head>
+
+<body>
+	<a href="#" class="btn_prev"><div class="go_back"></div></a>
+	<div id="wrap_join">
+    	<img src="http://image.club5678.com/imgs/ilheayo_job/img_login/logo_join.png" class="logo_join" width="172" height="50" alt="일해요"/>
+    	<div id="input_info">
+        <!--------------------------------------------------------------------- ID //--------------------------------------------------------------------->
+        	<!-- 아이디(기본폼)
+            <div class="box_id_1">
+                <div class="box_tel_1">
+                    <input type="tel" placeholder="휴대폰번호(숫자만입력)" class="bs_txt_base">
+                </div>
+                <a href="#"><div class="verifi_btn btn_grd_white ft_wt700">인증번호받기</div></a>
+
+            </div>
+            <p class="txt_id_info_1 txt_all bs_txt_base">
+            	※ [인증번호 받기]하면 인증번호 입력란이 나타납니다.<br>&nbsp;&nbsp;&nbsp;&nbsp;인증후에 최종 회원가입이 가능합니다.
+            </p>
+            <!-- 아이디(기본폼) //-->
+            <!-- 아이디(기본품_입력값없음) //-->
+            <div class="box_id_1">
+                <div class="box_bg_2">
+                    <input type="tel" placeholder="휴대폰번호(숫자만입력)" class="bs_txt_base">
+                </div>
+                <a href="#"><div class="verifi_btn btn_grd_white ft_wt700">인증번호받기</div></a>
+
+            </div>
+            <p class="txt_id_info_1 txt_all txt_no ft_wt700 bs_txt_base">
+            	※ 핸드폰번호를 입력하세요.
+            </p>
+            <!-- 아이디(기본폼_입력값없음) //-->
+
+            <!-- 아이디(인증번호입력폼)
+            <div class="box_id_2">
+                <div class="box_tel_2">
+                    <input type="tel" placeholder="인증번호입력" class="bs_txt_base">
+                </div>
+                <a href="#"><div class="ok_btn btn_grd_white ft_wt700">확인</div></a>
+                <a href="#"><div class="re_btn btn_grd_white ft_wt700">재전송</div></a>
+            </div>
+            <p class="txt_id_info_2 txt_all ft_wt700 bs_txt_base">
+            	※ 01011111111로 인증번호가 전송되었습니다!<br>&nbsp;&nbsp;&nbsp;&nbsp;통신사 사정에 따라 1~2분 소요될 수 있습니다.
+            </p>
+            <!-- 아이디(인증번호입력폼) //-->
+            <!-- 아이디(인증번호입력폼_입력값없음)
+            <div class="box_id_2">
+                <div class="box_bg_2">
+                    <input type="tel" placeholder="인증번호입력" class="bs_txt_base">
+                </div>
+                <a href="#"><div class="ok_btn btn_grd_white ft_wt700">확인</div></a>
+                <a href="#"><div class="re_btn btn_grd_white ft_wt700">재전송</div></a>
+            </div>
+            <p class="txt_id_info_2 txt_all txt_no ft_wt700 bs_txt_base">
+            	※ 인증번호를 입력하세요.
+            </p>
+            <!-- 아이디(인증번호입력폼_입력값없음) //-->
+
+            <!-- 아이디(인증완료폼)
+            <div class="box_id_3">
+                <p class="phone_num">01065436179</p>
+            </div>
+             <p class="txt_id_info_3 txt_all ft_wt700 bs_txt_base">※ 인증에 성공하였습니다! 남은 항목을 입력하세요</p>
+            <!-- 아이디(인증번호완료폼) //-->
+		<!--------------------------------------------------------------------- ID //--------------------------------------------------------------------->
+        <!------------------------------------------------------------------ PASSWORD //------------------------------------------------------------------>
+        	<!-- 비밀번호(기본폼) //-->
+            <div class="box_pw_1">
+            	<div class="box_bg_1">
+        			<input type="password" placeholder="비밀번호 (영문, 숫자 4자~12자)" class="bs_txt_base">
+                </div>
+                <div class="box_bg_1">
+                	<input type="password" placeholder="비밀번호 확인" class="bs_txt_base">
+                </div>
+                <p class="txt_all bs_txt_base">※ 영문, 숫자(4자~12자)</p>
+            </div>
+            <!-- 비밀번호(기본폼) //-->
+            <!-- 비밀번호(등록가능폼)
+            <div class="box_pw_2">
+            	<div class="box_bg_1">
+        			<input type="password" placeholder="비밀번호 (영문, 숫자 4자~12자)" class="bs_txt_base">
+                </div>
+                <div class="box_bg_1">
+                	<input type="password" placeholder="비밀번호 확인" class="bs_txt_base">
+                </div>
+                <p class="txt_all txt_ok ft_wt700">※ 등록 가능합니다.</p>
+            </div>
+            <!-- 비밀번호(등록가능폼) //-->
+            <!-- 비밀번호(등록불가폼)
+            <div class="box_pw_2">
+            	<div class="box_bg_2">
+        			<input type="password" placeholder="비밀번호 (영문, 숫자 4자~12자)" class="bs_txt_base">
+                </div>
+                <div class="box_bg_2">
+                	<input type="password" placeholder="비밀번호 확인" class="bs_txt_base">
+                </div>
+                <p class="txt_all txt_no ft_wt700">※ 비밀번호가 일치하지 않습니다.</p>
+            </div>
+            <!-- 비밀번호(등록불가폼) //-->
+		<!------------------------------------------------------------------ PASSWORD //------------------------------------------------------------------>
+        <!-------------------------------------------------------------------- NAME //-------------------------------------------------------------------->
+            <!-- 이름(기본폼) //-->
+            <div class="box_name_1">
+            	<div class="box_bg_1">
+        			<input type="text" placeholder="이름 (한글 2자~4자)" class="bs_txt_base">
+                </div>
+                <p class="txt_all bs_txt_base">※ 한글만 사용할 수 있습니다.(2자~4자)</p>
+            </div>
+            <!-- 이름(기본폼) //-->
+            <!-- 이름(등록가능)
+            <div class="box_name_1">
+            	<div class="box_bg_1">
+        			<input type="text" placeholder="이름 (한글 2자~4자)" class="bs_txt_base">
+                </div>
+                <p class="txt_all txt_ok ft_wt700">※ 등록 가능합니다.</p>
+            </div>
+            <!-- 이름(등록가능) //-->
+            <!-- 이름(등록불가)
+            <div class="box_name_1">
+            	<div class="box_bg_2">
+        			<input type="text" placeholder="이름 (한글 2자~4자)" class="bs_txt_base">
+                </div>
+                <p class="txt_all txt_no ft_wt700">※ 2자~4자 한글만 사용가능합니다.</p>
+            </div>
+            <!-- 이름(등록불가) //-->
+        <!-------------------------------------------------------------------- NAME //-------------------------------------------------------------------->
+			<div class="slct_1">
+        		<div class="slct_year">
+                	<!-- 기본폼(클래스명 slct_dflt)
+                       <select class="slct_dflt">
+                    	<option>2016</option>
+                        <option>2015</option>
+                        <option>2014</option>
+                    </select>
+                    <!-- 기본폼 //-->
+                    <!-- 선택값없음(클래스명 slct_none) //-->
+                    <select class="slct_none">
+                    	<option>2016</option>
+                        <option>2015</option>
+                        <option>2014</option>
+                    </select>
+                    <!-- 선택값없음 //-->
+                </div>
+                <div class="slct_sex">
+                	<a href="#" class="man_btn"></a>
+                   	<a href="#" class="woman_btn"></a>
+                </div>
+            </div>
+			<div class="slct_2">
+            	<div class="slct_region slct_region_1">
+                   <!-- 기본폼(클래스명 slct_dflt)
+                	<select  class="slct_dflt">
+                    	<option>서울</option>
+                        <option>광주</option>
+                        <option>부산</option>
+                    </select>
+                    <!-- 기본폼 //-->
+                    <!-- 선택값없음(클래스명 slct_dflt) //-->
+                	<select  class="slct_none">
+                    	<option>서울</option>
+                        <option>광주</option>
+                        <option>부산</option>
+                    </select>
+                    <!-- 선택값없음 //-->
+                </div>
+                <div class="slct_region slct_region_2">
+                    <!-- 기본폼(클래스명 slct_dflt)
+                	<select  class="slct_dflt">
+                    	<option>-</option>
+                        <option>마륵동</option>
+                        <option>금호동</option>
+                    </select>
+                    <!-- 기본폼 //-->
+                    <!-- 선택값없음(클래스명 slct_none) //-->
+                    <select  class="slct_none">
+                    	<option>-</option>
+                        <option>마륵동</option>
+                        <option>금호동</option>
+                    </select>
+                    <!-- 선택값없음 //-->
+                </div>
+            </div>
+        </div>
+        <div class="box_agree">
+        	<input type="checkbox" id="chk1" class="chk">
+            <label for="chk1" class="chk_lb"><u>약관 및 개인정보보호정책에 동의합니다.</u> </label><a href="#" class="btn_look">[보기]</a>
+        </div>
+        <a href="#"><div class="join_complete btn_end ft_wt900">가입완료</div></a>
+	</div>
+</body>
+</html>
