@@ -12,6 +12,7 @@
 .mt_225 {margin-top:-225px;}
 .mt_150 {margin-top:-150px;}
 .mt_122 {margin-top:-122px;}
+.mt_118 {margin-top:-118px;}
 .mt_100 {margin-top:-100px;}
 
 /* 나의 연락 내역 */
@@ -176,11 +177,14 @@
 .pop_container .call_header .call_clse a:active{background:rgba(0,0,0,0.05)  url(http://image.club5678.com/imgs/ilheayo_job/img01/ico_clse.png) center center no-repeat; background-size:18px 18px;}
 
 .pop_container .call_content{position:relative; width:100%; height:auto; padding-top:14px; text-align:center;}
-.pop_container .call_content .call_info_txt{letter-spacing:-0.5px; margin-bottom:6px; line-height:18px;}
-.pop_container .call_content .call_info_txt span{line-height:38px;}
+.pop_container .call_content .call_info_txt{font-size:14px; letter-spacing:-0.5px; margin-bottom:6px; line-height:18px;}
+.pop_container .call_content .call_info_txt span{font-size:16px; line-height:26px;}
 .pop_container .call_content .call_info_txt img{vertical-align:middle; margin:0 3px; padding-top:1px;}
+@media(min-width:360px){
+.pop_container .call_content .call_info_txt{font-size:15px;}
+}
 
-.pop_container .btn_call{position:relative; width:100%; margin-bottom:14px; text-align:center;}
+.pop_container .btn_call{position:relative; width:100%; margin:10px 0 14px 0; text-align:center;}
 .pop_container .btn_call a{width:138px; padding:12px 0; background:url(http://image.club5678.com/imgs/ilheayo_job/img01/ico_call.png) no-repeat 26px center; background-size:13px 16px; font-size:17px; letter-spacing:-0.5px; padding-left:20px;}
 
 /*----------------------------- 170209 음성통화팝업(김다솜) -----------------------------*/
