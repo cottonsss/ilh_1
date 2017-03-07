@@ -176,16 +176,17 @@
 .pop_container .call_header .call_clse a{display:block; padding:14px 0; background:url(http://image.club5678.com/imgs/ilheayo_job/img01/ico_clse.png) center center no-repeat; background-size:18px 18px; text-indent:-9999px;}
 .pop_container .call_header .call_clse a:active{background:rgba(0,0,0,0.05)  url(http://image.club5678.com/imgs/ilheayo_job/img01/ico_clse.png) center center no-repeat; background-size:18px 18px;}
 
-.pop_container .call_content{position:relative; width:100%; height:auto; padding-top:14px; text-align:center;}
-.pop_container .call_content .call_info_txt{font-size:14px; letter-spacing:-0.5px; margin-bottom:6px; line-height:18px;}
-.pop_container .call_content .call_info_txt span{font-size:16px; line-height:26px;}
-.pop_container .call_content .call_info_txt img{vertical-align:middle; margin:0 3px; padding-top:1px;}
+.pop_container .box_call_pop{position:relative; width:100%; height:auto; text-align:center;}
+.pop_container .box_call_pop a{display:block;}
+.pop_container .box_call_pop .call_content{position:relative; width:100%; height:auto; padding-top:9px; text-align:center;}
+.pop_container .box_call_pop .call_content .call_info_txt{font-size:14px; color:#303030; letter-spacing:-0.5px; margin-bottom:6px; line-height:18px;}
+.pop_container .box_call_pop .call_content .call_info_txt span{display:block; font-size:16px; font-weight:bold; line-height:34px;}
+.pop_container .box_call_pop .call_content .call_info_txt img{vertical-align:middle; margin:0 3px 0px 5px; padding-top:1px;}
 @media(min-width:360px){
-.pop_container .call_content .call_info_txt{font-size:15px;}
+.pop_container .box_call_pop .call_content .call_info_txt{font-size:15px;}
 }
 
-.pop_container .btn_call{position:relative; width:100%; margin:10px 0 14px 0; text-align:center;}
-.pop_container .btn_call a{width:138px; padding:12px 0; background:url(http://image.club5678.com/imgs/ilheayo_job/img01/ico_call.png) no-repeat 26px center; background-size:13px 16px; font-size:17px; letter-spacing:-0.5px; padding-left:20px;}
+.pop_container .box_call_pop .btn_call{display:inline-block; position:relative; width:128px; margin:10px 0 14px 0; padding:12px 0 12px 19px; background:url(http://image.club5678.com/imgs/ilheayo_job/img01/ico_call.png) no-repeat 19px center; background-size:13px 16px; border:1px solid #606163; border-radius:25px; -webkit-border-radius:25px; -moz-border-radius:25px; font-size:17px; color:#303030; letter-spacing:-0.5px; line-height:14px; text-decoration:none; text-align:center; -webkit-tap-highlight-color:rgba(255,255,255,0);}
 
 /*----------------------------- 170209 음성통화팝업(김다솜) -----------------------------*/
 .style_1::-webkit-scrollbar-track
