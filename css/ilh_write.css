@@ -73,14 +73,18 @@ p.slct_write_txt {font-size:14px; line-height:19px;}
 .slct_type .crcl_p {cursor:pointer; float:right; width:114px; height:114px; border-radius:57px; background:-moz-linear-gradient(left, rgba(0,129,212,0.7) 0%, rgba(3,165,184,0.7) 100%); background:-webkit-linear-gradient(left, rgba(0,129,212,0.7) 0%,rgba(3,165,184,0.7) 100%); background:linear-gradient(to left, rgba(0,129,212,0.7) 0%,rgba(3,165,184,0.7) 100%); filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#0081d4', endColorstr='#03a5b8',GradientType=1 );}
 .slct_type .crcl_p:active {background:-moz-linear-gradient(left, rgba(0,129,212,0.9) 0%, rgba(3,165,184,0.9) 100%); background:-webkit-linear-gradient(left, rgba(0,129,212,0.9) 0%,rgba(3,165,184,0.9) 100%); background:linear-gradient(to left, rgba(0,129,212,0.9) 0%,rgba(3,165,184,0.9) 100%); box-shadow:0px 0px 15px 6px rgba(0,117,255,.2); filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#0081d4', endColorstr='#03a5b8',GradientType=1 ); -webkit-box-shadow:0px 0px 15px 6px rgba(0,117,255,.2); -moz-box-shadow:0px 0px 15px 6px rgba(0,117,255,.2);}
 
-.my_writing {position:relative; margin:12px 12px 0 12px; padding:15px 12px; border:1px solid #d8deea; border-radius:10px; background:#f6faff; text-align:left;}
-.my_writing .my_writing_tit {margin-bottom:11px; font-size:14px;}
-.my_writing .my_writing_txt {margin-bottom:11px; font-size:12px; line-height:16px; letter-spacing:-1px;}
-.my_writing .set_writing {position:relative; width:90%; margin:0 auto; padding:7px 0 6px 0; font-size:15px; text-align:center; line-height:19px;}
+.my_writing {position:relative; margin:14px 20px 0 20px; padding:10px 2px; border-top:1px solid rgba(168,168,168,0.65); text-align:left;}
+.my_writing .my_writing_tit {margin-bottom:5px; padding-left:26px; font-size:14px; color:#515151; line-height:20px; background:url('http://image.ilhaeyo.com/imgs/ilheayo_job/img01/ico_file.png') no-repeat; background-size:21px 17px;}
+.my_writing .my_writing_txt {margin-bottom:8px; font-size:14px; color:#515151; line-height:20px; letter-spacing:-1px;}
+.my_writing .set_writing {position:relative; width:100%; margin:0 auto; padding:10px 0 8px 0; background:rgba(255,192,71,0.85); border-radius:4px; font-size:15px; color:#554646; text-align:center; line-height:19px;}
+.my_writing  .set_writing:active {background:rgba(255,192,71,1);}
+.my_writing  .set_writing_active {background:rgba(255,192,71,1);}
 
 @media (min-width:360px) {
 h3.slct_write_tit {margin:31px 0 23px 0;}
 .slct_type {margin:20px auto;}
+.my_writing {margin:45px 20px 0 20px; padding:10px 8px;}
+.my_writing .my_writing_tit {font-size:15px;}
 }
 /*-------------------------------------------------------------- 구인/구직글쓰기선택폼 --------------------------------------------------------------*/
 

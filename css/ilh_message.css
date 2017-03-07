@@ -121,3 +121,5 @@
 #msg_contents .photo_cs_badge{position:absolute; top:33px; left:3px; width:36px; height:18px; text-indent:-9999px;}
 #msg_contents .msg_cs_badge {background:url(http://image.club5678.com/imgs/ilheayo_job/img01/ico_cs_badge.png) no-repeat center center; background-size:36px 18px; }
 .cs_txt_col { color:#06C; font-size:12px; font-weight:600; }
+.input_txt_cs {width:66%;font-size:12px; margin:10px 0 0 5px; letter-spacing:-1px;}
+.txt_color_cs {color:#06F; font-weight:bold; }

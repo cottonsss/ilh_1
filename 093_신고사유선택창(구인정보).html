@@ -19,21 +19,41 @@
 	<div class="pop_bg_modal">
 	</div>
 	<!-- 팝업 배경 -->
-	<div class="pop_container wid_94 mt_150 box_shadow1">
+	<div class="pop_container wid_94 mt_275 box_shadow1">
 		<!-- 팝업 헤더 -->
 		<div class="pop_header">
-			<h2 class="grd_pop"><span class="pop_report">게시물 신고 (신고사유 선택)</span></h2>
+			<h2 class="grd_pop"><span class="pop_report">구인정보 신고 (사유선택)</span></h2>
 		</div>
 		<!-- // 팝업 헤더 -->
 		<!-- 신고사유 선택 -->
 		<ul class="report_slct">
 			<li>
-			상세정보 허위 <input type="radio" name="report_slct" value="상세정보 허위"/>
+			허위 내용/맞지 않는 연락처 <input type="radio" name="report_slct" value="허위 내용/맞지 않는 연락처"/>
 			<div class="slct_check">
 			</div>
 			</li>
 			<li>
-			광고 / 음란 글 <input type="radio" name="report_slct" value="광고 / 음란 글"/>
+			최저임금 미만 위반 <input type="radio" name="report_slct" value="최저임금 미만 위반"/>
+			<div class="slct_check">
+			</div>
+			</li>
+			<li>
+			통장/신분증 등 정보를 요구 <input type="radio" name="report_slct" value="통장/신분증 등 정보를 요구"/>
+			<div class="slct_check">
+			</div>
+			</li>
+			<li>
+			다단계/피라미드성 판매업체 <input type="radio" name="report_slct" value="다단계/피라미드성 판매업체"/>
+			<div class="slct_check">
+			</div>
+			</li>
+			<li>
+			임금체불, 채용사기 업체 <input type="radio" name="report_slct" value="임금체불, 채용사기 업체"/>
+			<div class="slct_check">
+			</div>
+			</li>
+			<li>
+			광고 및 불건전업소 <input type="radio" name="report_slct" value="광고 및불건전업소"/>
 			<div class="slct_check">
 			</div>
 			</li>
@@ -41,6 +61,10 @@
 			기타 <input type="radio" name="report_slct" value="기타"/>
 			<div class="slct_check">
 			</div>
+			</li>
+			<li class="rp_reason">
+			<label for="reason_box">상세 사유 입력</label>
+			<textarea name="rp_reason_box" id="rp_reason_box" rows="3" placeholder="상세사유를 입력하세요."></textarea>
 			</li>
 		</ul>
 		<!-- // 신고사유 선택 -->
@@ -51,7 +75,7 @@
 				<a href="#" class="ft_wt700">취소</a>
 				</li>
 				<li>
-				<a href="#" class="ft_wt700">신고하기</a>
+				<a href="#" class="btn_rp ft_wt700">신고하기</a>
 				</li>
 			</ul>
 		</div>

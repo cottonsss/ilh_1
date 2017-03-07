@@ -68,12 +68,19 @@
 .regi_content .regi_card ul li {position:relative; width:100%; height:auto; border-bottom:2px solid #e2e6ef;}
 .regi_content .regi_card ul .regi_none {width:100%; height:45px; text-align:center; line-height:45px;}
 .regi_content .regi_card ul li:after {display:block; clear:both; content:"";}
-.regi_content .regi_card ul li .regi_txt {display:block; width:100%; height:45px; padding-left:15px; padding-right:75px; overflow:hidden; text-overflow:ellipsis; line-height:45px; white-space:nowrap; box-sizing:border-box;}
-.regi_content .regi_card ul li .regi_date {margin-right:5px;}
-.regi_content .regi_card ul li .btn_regi_change {position:absolute; top:0; right:0; width:75px; height:45px;}
-.regi_content .regi_card ul li .btn_regi_change a {display:block; width:100%; height:100%; padding-top:8px; padding-left:3px; box-sizing:border-box;}
-.regi_content .regi_card ul li .btn_regi_comple{position:absolute; top:0; right:0; width:75px; height:45px; padding-top:8px; padding-left:3px; box-sizing:border-box;}
-.regi_content .regi_card ul li .btn_regi_comple span{display:inline-block; position:relative; width:60px; height:14px; padding:6px 0; color:#f04a37; font-size:14px; font-weight:700; text-align:center;}
+.regi_content .regi_card ul li .regi_txt {display:block; width:100%; height:45px; padding-left:7px; padding-right:135px; line-height:45px; box-sizing:border-box;}
+.regi_content .regi_card ul li .regi_txt a {display:block; width:100%; height:100%; font-size:14px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; letter-spacing:-0.5px;}
+.regi_content .regi_card ul li .pr_66 {padding-right:66px;}
+.regi_content .regi_card ul li .regi_date {margin-right:3px; font-size:13px;}
+.regi_content .regi_card ul li .btn_regi_change {position:absolute; top:0; right:5px; width:55px; height:45px;}
+.regi_content .regi_card ul li .btn_regi_change .btn_white{display:block; width:100%; height:28px; margin-top:9px; padding:6px 0; box-sizing:border-box;}
+.regi_content .regi_card ul li .btn_regi_change
+span{display:inline-block; width:100%; height:100%; font-size:14px; color:#46526c;}
+.regi_content .regi_card ul li .btn_regi_comple{position:absolute; top:0; right:0; width:66px; height:45px; padding-top:8px; padding-left:3px; box-sizing:border-box;}
+.regi_content .regi_card ul li .btn_regi_comple span{display:inline-block; position:relative; width:55px; height:14px; padding:6px 0; color:#f04a37; font-size:14px; font-weight:700; text-align:center;}
+.regi_content .regi_card ul li .btn_go_up{position:absolute; top:0; right:63px; width:70px; height:45px;}
+.regi_content .regi_card ul li .btn_go_up .btn_white{display:block; width:100%; height:28px; margin-top:9px; padding:6px 0; box-sizing:border-box;}
+.regi_content .regi_card ul li .btn_go_up span{display:inline-block; width:100%; height:100%; padding-left:15px; box-sizing:border-box; background:url(http://image.ilhaeyo.com/imgs/ilheayo_job/img01/ico_my_up.png) no-repeat 7px 1px; background-size:12px 12px; font-size:14px; color:#46526c;}
 
 /*----------------------------------------------- 1:1 문의(제안)하기 -----------------------------------------------*/
 /* 탭 네비 */
