@@ -34,7 +34,7 @@
 /* 상단 글씨 영역 */
 #dt_top_wrap .dt_top {position:relative; float:left; width:80%; height:47px; padding:5px 0; box-sizing:border-box;}
 #dt_top_wrap .dt_top h2 {width:100%; height:22px; color:#46526c; font-size:16px; line-height:22px;}
-#dt_top_wrap .dt_top h3 {width:100%; height:15px; color:#525252; font-size:11px; font-weight:400; line-height:15px;}
+#dt_top_wrap .dt_top h3 {width:100%; height:15px; color:#525252; font-size:13px; font-weight:400; line-height:15px;}
 
 /* 정보 영역 공통 */
 #container h4 {position:relative; width:100%; height:29px; padding:0 12px; border-top:1px solid #cdd5e1; background-color:#eceff4; color:#46526c; font-size:15px; line-height:28px; letter-spacing:-0.5px; box-sizing:border-box;}

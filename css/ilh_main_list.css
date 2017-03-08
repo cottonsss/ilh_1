@@ -164,7 +164,7 @@ z-index 순서 : 내메뉴(900) 내메뉴배경(800) 드롭(700) 드롭배경(60
 #my_container .my_u .my_recep li:nth-of-type(odd){background-color:#323a4c; border-top:1px solid #262c3c;}
 #my_container .my_u .my_recep li:nth-of-type(odd) a{display:block; width:100%; height:30px; line-height:30px; padding:0 15px; box-sizing:border-box; color:#afbac7; font-size:13px;}
 #my_container .my_u .my_recep li:nth-of-type(even){background-color:#3c465b; padding:10px 15px; font-size:13px;}
-#my_container .my_u .my_recep li:nth-of-type(even) p{width:100%; height:auto; line-height:15px; font-size:11px; padding-top:7px; color:#7e8ca8;}
+#my_container .my_u .my_recep li:nth-of-type(even) p{width:100%; height:auto; line-height:15px; font-size:11px; padding-top:7px; color:#d6dae2;}
 #my_container .my_u .my_recep li:nth-of-type(even) .chk_wrap{position:absolute; top:5px; right:10px; width:45px; transform:scale(0.9);}
 
 /* 하단 버튼 */

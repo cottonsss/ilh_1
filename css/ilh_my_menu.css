@@ -46,42 +46,6 @@
 .btn_closed {width:23px; height:23px; background:url(http://image.ilhaeyo.com/imgs/ilheayo_job/img01/img_btn_closed.png) no-repeat; background-size:23px 23px;}
 .scrap_wrap .content_scrap_day ul li .job_offer_badge, .scrap_wrap .content_scrap_day ul li .find_job_badge {vertical-align:middle; margin-right:4px;}
 
-/*----------------------------------------------- 내 등록글 관리 -----------------------------------------------*/
-.regi_content {position:relative; width:100%; height:100%; padding:5px 7px; box-sizing:border-box;}
-
-/* 등록글 더보기 */
-.regi_more {position:relative; width:100%; height:auto;}
-.regi_more a {display:block; width:100%; height:100%;}
-.regi_more a span {width:100%; padding:8px 0; font-size:15px; line-height:15px;}
-
-/****************************** 170202 김다미 ******************************/
-/* 등록글 리스트 */
-.regi_content .regi_card {position:relative; width:100%; height:auto; padding-bottom:10px;}
-.regi_content .regi_card h2 {position:relative; width:100%; height:30px; padding-left:15px; color:#fff; font-size:14px; text-align:left; line-height:30px; box-sizing:border-box;}
-.regi_content .regi_card .dark_blue {background-color:#46526c;}
-.regi_content .regi_card .gray{position:relative; width:100%; height:30px; color:#fff; font-size:14px; text-align:left; line-height:30px; background-color:#909dad;}
-.regi_content .regi_card .regi_l{position:absolute; top:0; left:0; width:100px; text-align:center;}
-.regi_content .regi_card .regi_c{padding:0 75px 0 100px; box-sizing:border-box; text-align: center;}
-.regi_content .regi_card .regi_r{position:absolute; top:0; right:0; width:75px; text-align:center;}
-
-.regi_content .regi_card ul {position:relative; width:100%; height:auto; background-color:#fff; font-size:14px;}
-.regi_content .regi_card ul li {position:relative; width:100%; height:auto; border-bottom:2px solid #e2e6ef;}
-.regi_content .regi_card ul .regi_none {width:100%; height:45px; text-align:center; line-height:45px;}
-.regi_content .regi_card ul li:after {display:block; clear:both; content:"";}
-.regi_content .regi_card ul li .regi_txt {display:block; width:100%; height:45px; padding-left:7px; padding-right:135px; line-height:45px; box-sizing:border-box;}
-.regi_content .regi_card ul li .regi_txt a {display:block; width:100%; height:100%; font-size:14px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; letter-spacing:-0.5px;}
-.regi_content .regi_card ul li .pr_66 {padding-right:66px;}
-.regi_content .regi_card ul li .regi_date {margin-right:3px; font-size:13px;}
-.regi_content .regi_card ul li .btn_regi_change {position:absolute; top:0; right:5px; width:55px; height:45px;}
-.regi_content .regi_card ul li .btn_regi_change .btn_white{display:block; width:100%; height:28px; margin-top:9px; padding:6px 0; box-sizing:border-box;}
-.regi_content .regi_card ul li .btn_regi_change
-span{display:inline-block; width:100%; height:100%; font-size:14px; color:#46526c;}
-.regi_content .regi_card ul li .btn_regi_comple{position:absolute; top:0; right:0; width:66px; height:45px; padding-top:8px; padding-left:3px; box-sizing:border-box;}
-.regi_content .regi_card ul li .btn_regi_comple span{display:inline-block; position:relative; width:55px; height:14px; padding:6px 0; color:#f04a37; font-size:14px; font-weight:700; text-align:center;}
-.regi_content .regi_card ul li .btn_go_up{position:absolute; top:0; right:63px; width:70px; height:45px;}
-.regi_content .regi_card ul li .btn_go_up .btn_white{display:block; width:100%; height:28px; margin-top:9px; padding:6px 0; box-sizing:border-box;}
-.regi_content .regi_card ul li .btn_go_up span{display:inline-block; width:100%; height:100%; padding-left:15px; box-sizing:border-box; background:url(http://image.ilhaeyo.com/imgs/ilheayo_job/img01/ico_my_up.png) no-repeat 7px 1px; background-size:12px 12px; font-size:14px; color:#46526c;}
-
 /*----------------------------------------------- 1:1 문의(제안)하기 -----------------------------------------------*/
 /* 탭 네비 */
 #tab_nav {position:relative; width:100%; height:auto;}
@@ -309,11 +273,11 @@ span{display:inline-block; width:100%; height:100%; font-size:14px; color:#46526
 .day_warp ul{position:relative; width:calc(100% - 85px); height:100%; padding-right:35px; box-sizing:border-box; float:left;}
 .day_warp ul li{position:relative; width:100%; height:auto; line-height:20px; color:#46526c; letter-spacing:-1px; overflow:hidden; white-space:nowrap; text-overflow:ellipsis;}
 .day_warp ul li:first-of-type{padding-top:10px; font-size:14px; font-weight:700;}
-.day_warp ul li:first-of-type span{margin-left:5px; color:#7e7e7e; font-size:11px; font-weight:400;}
+.day_warp ul li:first-of-type span{margin-left:5px; color:#7e7e7e; font-size:13px; font-weight:400;}
 .day_warp ul li:last-of-type{font-size:13px;}
 .day_warp ul li .call_time_txt{display:inline-block; padding-left:13px; background:url(http://image.club5678.com/imgs/ilheayo_job/img01/ico_call.png) no-repeat left center; background-size:10px 13px;}
 
-.day_warp .msg_txt_time{position:absolute; bottom:45px; right:5px; display:inline-block; color:#a2a2a2; font-size:11px; letter-spacing:-0.5px;}
+.day_warp .msg_txt_time{position:absolute; bottom:35px; right:5px; display:inline-block; color:#a2a2a2; font-size:13px; letter-spacing:-0.5px;}
 .day_warp .msg_num_pst{position:absolute; bottom:16px; right:8px;}
 
 /*----------------------------------------------- 날씨조회 -----------------------------------------------*/
@@ -356,3 +320,61 @@ span{display:inline-block; width:100%; height:100%; font-size:14px; color:#46526
 .day_warp .msg_photo .photo_cs_badge{position:absolute; bottom:2px; left:3px; width:36px; height:18px; text-indent:-9999px;}
 .day_warp .msg_photo .msg_cs_badge {background:url(http://image.club5678.com/imgs/ilheayo_job/img01/ico_cs_badge.png) no-repeat center center; background-size:36px 18px; }
 .day_warp ul li .cs_txt_col { color:#06C !important; font-size:12px; font-weight:600; }
+
+
+/*-----------------------------------------------170308 내등록글관리 수정(김다솜) -----------------------------------------------*/
+.regi_content {position:relative; width:100%; height:auto; padding:8px 12px; box-sizing:border-box; overflow-y:auto;}
+
+/* 등록글 더보기 */
+.regi_more {position:relative; width:100%; height:auto;}
+.regi_more a {display:block; width:100%; height:100%;}
+.regi_more a span {width:100%; padding:8px 0; font-size:15px; line-height:15px;}
+
+/* 등록글 리스트 */
+.regi_content .regi_card {position:relative; width:100%; height:auto; padding-bottom:10px;}
+.regi_content .regi_card h2 {position:relative; width:164px; height:30px; padding-left:20px; margin-bottom:4px; border-radius:4px; color:#fff; font-size:15px; text-align:left; line-height:31px; box-sizing:border-box;}
+.regi_content .regi_card .dark_blue {background-color:#46526c;}
+
+.regi_content .regi_card .box_card{position:relative; width:100%; height:auto; margin-bottom:5px; border:1px solid #bac2d3; border-radius:4px; box-sizing:border-box;}
+.regi_content .regi_card .box_none{position:relative; width:100%; height:auto; padding:16px 0; border:1px solid #bac2d3; border-radius:4px; background:#ecf1f4; color:#303030; box-sizing:border-box; text-align:center;}
+
+
+
+.regi_content .regi_card .box_card h3.card_tit a{display:-webkit-box; height:38px; margin:0 5px; padding:0 45px 0 13px; border-bottom:2px solid #e2e9ed; font-size:15px; line-height:39px; overflow:hidden; text-overflow:ellipsis; word-wrap:break-word; -webkit-box-orient:vertical; -webkit-line-clamp:1;}
+
+.regi_content .regi_card .box_card .card_txt{position:relative; display:-webkit-box; height:auto; overflow:hidden; text-overflow:ellipsis; word-wrap:break-word; -webkit-box-orient:vertical; -webkit-line-clamp:2;}
+.regi_content .regi_card .box_card .card_txt a{display:block; margin:10px 5px; padding:0 45px 0 13px; font-size:14px; color:#303030; line-height:19px; overflow:hidden;}
+.regi_content .regi_card .box_card .card_txt_line1{-webkit-line-clamp:1;}
+.regi_content .regi_card .box_card .card_txt_line1 a{line-height:36px;}
+
+.regi_content .regi_card .box_card .btn_mod{position:absolute; top:0; right:0; text-indent:-9999px;}
+.regi_content .regi_card .box_card .btn_mod a{display:block; width:30px; height:30px; border:1px solid #7b859a; border-radius:6px; box-sizing:border-box; background:#fff url(http://image.club5678.com/imgs/ilheayo_job/img01/btn_modify.png) no-repeat center center; background-size:15px 18px;}
+.regi_content .regi_card .box_card .btn_mod a:active{background-color:rgba(0,0,0,0.08);}
+.regi_content .regi_card .box_card .btn_mod a_active{background-color:rgba(0,0,0,0.08);}
+.regi_content .regi_card .box_card .btn_mod a.mod_tit{margin:5px;}
+.regi_content .regi_card .box_card .btn_mod a.mod_txt{margin:13px 5px; padding:0;}
+
+.regi_content .regi_card .box_card ul.btn_modi{position:relative; width:100%; height:auto; background:#ecf1f4; border-top:1px solid #d1dae0; border-radius:4px; font-size:0;}
+.regi_content .regi_card .box_card li{display:inline-block; width:33%; height:38px; font-size:14px; color:#303030; font-weight:700; line-height:38px; text-align:center; box-sizing:border-box;}
+.regi_content .regi_card .box_card li a{display:block;}
+.regi_content .regi_card .box_card li a img{padding-right:2px;}
+.regi_content .regi_card .box_card li a:active{background:rgba(0,0,0,0.05);}
+.regi_content .regi_card .box_card li.btn_wid34{width:34%;}
+.regi_content .regi_card .box_card ul.btn_modi li:nth-child(even){border-left:1px solid #d1dae0; border-right:1px solid #d1dae0;}
+
+/*
+.regi_content .regi_card .gray{position:relative; width:100%; height:30px; color:#fff; font-size:14px; text-align:left; line-height:30px; background-color:#909dad;}
+.regi_content .regi_card .regi_l{position:absolute; top:0; left:0; width:100px; text-align:center;}
+.regi_content .regi_card .regi_c{padding:0 75px 0 100px; box-sizing:border-box; text-align: center;}
+.regi_content .regi_card .regi_r{position:absolute; top:0; right:0; width:75px; text-align:center;}*/
+
+
+.regi_content .regi_card .box_card ul.end_list {position:relative; width:100%; height:auto; padding:0 5px; box-sizing:border-box; border-radius:4px; background-color:#fff; font-size:14px;}
+.regi_content .regi_card .box_card ul.end_list li {position:relative; width:100%; height:auto; border-bottom:2px solid #e2e6ef;}
+.regi_content .regi_card .box_card ul.end_list li.list_end {position:relative; width:100%; height:auto; border:none;}
+.regi_content .regi_card .box_card ul.end_list li .regi_txt {display:-webkit-box; width:100%; height:45px; padding:0 70px 0 13px; line-height:45px; text-align:left; box-sizing:border-box; overflow:hidden; text-overflow:ellipsis; word-wrap:break-word; -webkit-box-orient:vertical; -webkit-line-clamp:1;}
+
+.regi_content .regi_card .box_card ul.end_list li .regi_txt a {display:block; width:100%; height:100%; font-size:14px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; letter-spacing:-0.5px;}
+.regi_content .regi_card .box_card ul.end_list li .regi_date {margin-right:3px; font-size:13px;}
+.regi_content .regi_card .box_card ul.end_list li span.regi_end {position:absolute; top:0; right:0; width:55px; height:45px; line-height:45px; text-align:center; font-weight:bold; color:#f04a37;}
+/*---------------------------------------------------------------------------------------------------------------------------*/

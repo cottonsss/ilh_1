@@ -28,7 +28,7 @@
   font-family: 'NanumSquare';
   font-style: normal;
   font-weight: 400;
-  src: url('./font/nanum/NanumSquareR.eot');
+  src: url('./font/NanumSquareR.eot');
   src: local('Nanum Square Regular'),
        local('NanumSquareR'),
        url('./font/NanumSquareR.eot?#iefix') format('embedded-opentype'),

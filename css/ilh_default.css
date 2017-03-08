@@ -79,7 +79,7 @@ td,th {padding:0;}
  /* 보조그레이1 */
 .bs_asst_gray2 {color:#d8deea;}
  /* 보조그레이2 */
-.bs_asst_txt1 {color:#909dad;}
+.bs_asst_txt1 {color:#24282d;}
   /* 보조텍스트 */
 /* 메인그라디언트 */
 .grd_main {background:#04d464; background:-moz-linear-gradient(left, #04d464 0%, #0081d4 100%); background:-webkit-linear-gradient(left, #04d464 0%,#0081d4 100%); background:linear-gradient(to right, #04d464 0%,#0081d4 100%); filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#04d464', endColorstr='#0081d4',GradientType=1 );}
@@ -234,7 +234,7 @@ td,th {padding:0;}
 #container .content_list .list_profile a {display:block; width:100%; height:100%;}
 #container .content_list .top_line {position:relative; width:100%; height:20px; padding-left:75px; vertical-align:top; box-sizing:border-box;}
 #container .content_list .top_line .list_title {max-width:80%; height:auto; box-sizing:border-box;font-size:14px; font-weight:900; line-height:19px; letter-spacing:-0.5px;}
-#container .content_list .top_line .title_txt {display:inline-block; max-width:80%; text-overflow:ellipsis;  overflow:hidden; white-space:nowrap; padding-right:2px; vertical-align:middle;}
+#container .content_list .top_line .title_txt {display:inline-block; max-width:79%; text-overflow:ellipsis;  overflow:hidden; white-space:nowrap; padding-right:2px; vertical-align:middle;}
 #container .content_list .top_line .help_badge {vertical-align:middle;}
 #container .content_list .top_line .wt_time {position:absolute; top:0px; right:0px; display:inline-block; width:auto; height:13px; padding:2px 5px 2px 0; color:#464d57; font-size:12px; line-height:12px;}
 #container .content_list .mid_line {position:relative; width:100%; height:45px; padding:3px 10px 6px 75px; box-sizing:border-box;}
