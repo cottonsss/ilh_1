@@ -354,7 +354,7 @@
 .regi_content .regi_card .box_card .btn_mod a.mod_tit{margin:5px;}
 .regi_content .regi_card .box_card .btn_mod a.mod_txt{margin:13px 5px; padding:0;}
 
-.regi_content .regi_card .box_card ul.btn_modi{position:relative; width:100%; height:auto; background:#ecf1f4; border-top:1px solid #d1dae0; border-radius:4px; font-size:0;}
+.regi_content .regi_card .box_card ul.btn_modi{position:relative; width:100%; height:auto; background:#ecf1f4; border-top:1px solid #d1dae0; border-radius:0 0 4px 4px; font-size:0;}
 .regi_content .regi_card .box_card li{display:inline-block; width:33%; height:38px; font-size:14px; color:#303030; font-weight:700; line-height:38px; text-align:center; box-sizing:border-box;}
 .regi_content .regi_card .box_card li a{display:block;}
 .regi_content .regi_card .box_card li a img{padding-right:2px;}
