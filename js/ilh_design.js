@@ -244,7 +244,8 @@ $(document).ready(function(){
 		$(notice_txt).slideToggle(200);
 	});
 
-	/******************** 지도 ********************/
+    /*
+	 지도
 	$(".customoverlay").click(function(){
 		$("#container").fadeToggle(200);
 		$(".box_all_info").slideToggle(200);
@@ -269,5 +270,6 @@ $(document).ready(function(){
 	}
 	$(window).on("load",info_list1_width);
 	$(window).on("resize",info_list1_width);
+    */
 
 });

@@ -299,7 +299,7 @@
 .mod_header h2 {width:100%; height:35px; margin:0; padding:0 20px; border-radius:10px 10px 0 0; color:#fff; font-size:15px; line-height:35px; box-sizing:border-box;}
 
 .box_mod_tit {position:relative; width:100%; height:auto; padding:16px 22px 4px 22px; box-sizing:border-box;}
-.box_mod_tit textarea {display:block; width:100%; height:34px!important; padding:8px 10px; border:1px solid #c0c7d4; border-radius:3px; background:#f2f5fa; outline:none; font-size:14px; color:#46526c; font-family:'Nanumodquare'; line-height:14px; box-sizing:border-box; resize:none!important;}
+.box_mod_tit input[type=text] {display:block; width:100%; height:34px!important; padding:7px 10px; border:1px solid #c0c7d4; border-radius:3px; background:#f2f5fa; outline:none; font-size:14px; color:#46526c; font-family:'Nanumodquare'; font-weight:700; line-height:16px; box-sizing:border-box; resize:none!important;}
 
 .box_mod_txt {position:relative; width:100%; height:auto; padding:16px 22px 4px 22px; box-sizing:border-box;}
 .box_mod_txt textarea {display:block; width:100%; height:100px!important; padding:8px 10px; border:1px solid #c0c7d4; border-radius:3px; background:#f2f5fa; outline:none; font-size:14px; color:#46526c; font-family:'Nanumodquare'; font-weight:700; line-height:21px; box-sizing:border-box; resize:none!important;}
@@ -310,3 +310,8 @@
 .mod_dn li a {display:table-cell; padding:0 5px; vertical-align:middle;}
 .mod_dn li a span {width:100%; padding:13px 0; color:#46526c; font-size:16px; line-height:15px;}
 /*----------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+input:-moz-placeholder {color:#46526c; font-weight:normal;}
+::-webkit-input-placeholder {color:#46526c; font-weight:normal;}
+::-moz-placeholder {color:#46526c; font-weight:normal;}
+:-ms-input-placeholder {color:#46526c; font-weight:normal;}
