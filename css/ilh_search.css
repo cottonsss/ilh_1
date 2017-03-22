@@ -2,17 +2,28 @@
 /****************************** 170105 김다미 ******************************/
 /* 검색 결과 */
 .result_wrap {display:none; position:relative; width:100%; height:auto;}
-.filter_box {position:relative; width:100%; height:40px; padding:5px; box-sizing:border-box; background-color:#fff;}
-.filter_box select {width:100%; height:30px; border:none; outline:none; background:none; color:#46526c; font-size:13px; font-weight:700; font-family:'NanumSquare'; line-height:30px; appearance:none;-webkit-appearance:none; -o-appearance:none; -moz-appearance:none;}
-.result_filter {float:left; width:75px; height:100%; margin-right:5px;}
-.result_filter:last-of-type{margin-right:5px;}
-.result_filter select {padding:0 15px 0 5px; border:1px solid #d8deea; border-radius:5px; background:url(http://image.ilhaeyo.com/imgs/ilheayo_job/img01/ico_drop01.png) 94% 50% no-repeat; background-size:12px 7px; box-sizing:border-box;}
+/*.filter_box {position:relative; width:100%; height:40px; padding:5px; box-sizing:border-box; background-color:#fff;}
+.result_filter {float:left; width:75px; height:100%; margin-right:5px; cursor:pointer;}
+.result_filter:nth-of-type(2){margin-right:0px;}
+.result_filter span{display:block; width:100%; height:30px; line-height:30px; padding:0 15px 0 5px; border:1px solid #d8deea; border-radius:5px; color:#46526c; font-size:13px; font-weight:700; background:url(http://image.ilhaeyo.com/imgs/ilheayo_job/img01/ico_drop01.png) 94% 50% no-repeat; background-size:12px 7px; box-sizing:border-box;}
 .result_align {float:right; width:67px; height:100%;}
-.result_align select {background:url(http://image.ilhaeyo.com/imgs/ilheayo_job/img01/ico_drop03.png) 92% 50% no-repeat; background-size:12px 7px;}
-.result_filter span, .result_align span {display:none;}
-.result_info {position:relative; width:100%; height:30px; padding:0 10px; border-bottom:1px solid #3d4964; background-color:#46526c; color:#fff; font-size:14px; line-height:30px; box-sizing:border-box;letter-spacing:-0.5px;}
+.result_align select {width:100%; height:30px; border:none; outline:none; background:none; color:#46526c; font-size:13px; font-weight:700; font-family:'NanumSquare'; line-height:30px; appearance:none; -webkit-appearance:none; -o-appearance:none; -moz-appearance:none; background:url(http://image.ilhaeyo.com/imgs/ilheayo_job/img01/ico_drop03.png) 92% 50% no-repeat; background-size:12px 7px;}*/
+.result_info {clear:both; position:relative; z-index:600; width:100%; height:30px; padding:0 10px; border-bottom:1px solid #3d4964; background-color:#46526c; color:#fff; font-size:14px; line-height:30px; box-sizing:border-box;letter-spacing:-0.5px;}
 .result_info .result_num {color:#fff844;}
 
 /****************************** 170109 김다미 ******************************/
 body{background-color:#eceff4;}
 .select{background:rgba(0,0,0,0.05);}
+
+/****************************** 170315 김다미 ******************************/
+/* 상세 검색 */
+.filter_box{position:relative; z-index:700; width:100%; height:34px; background-color:#fff; font-size:14px; padding-top:2px; box-sizing:border-box;}
+.filter_box:after{content:""; display:block; clear:both;}
+.result_filter{position:relative; width:25%; height:auto; float:left; border-radius:4px; background:#fff url(http://image.ilhaeyo.com/imgs/ilheayo_job/img01/bg_bar04.png) no-repeat right 7px; background-size:1px 16px;}
+.result_filter .rf_slct{position:relative; width:100%; height:32px; line-height:31px; border-radius:4px 4px 0 0; text-align:center; padding-right:15px; box-sizing:border-box; font-weight:700; background:url(http://image.ilhaeyo.com/imgs/ilheayo_job/img01/ico_drop01.png) no-repeat 85% 12px; background-size:10px 6px; cursor:pointer;}
+.result_filter .slct_active{color:#fff; background:#02a6a2 url(http://image.ilhaeyo.com/imgs/ilheayo_job/img01/ico_drop04.png) no-repeat 85% 12px; background-size:10px 6px;}
+.result_filter .rf_option{display:none; position:absolute; z-index:10; width:100%; height:auto; background-color:#fff; border-radius:0 0 4px 4px; padding:0 2px; box-sizing:border-box;}
+.result_filter .rf_option li{width:100%; height:40px; line-height:40px; border-bottom:1px solid #edeff3; text-align:center; font-weight:700; color:#000; cursor:pointer;}
+.result_filter .rf_option li:last-of-type{border-bottom:none;}
+.result_filter .rf_option li:active{background:rgba(0,0,0,0.05);}
+.result_filter .option_active{color:#02a6a2!important;}

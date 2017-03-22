@@ -7,13 +7,9 @@
 .pop_container {position:fixed; top:50%; height:auto; overflow:hidden; border-radius:7px; background-color:#fff;}
 .wid_98 {left:1%; right:1%; width:98%;}
 .wid_94 {left:3%; right:3%; width:94%;}
-.wid_70 {left:15%; right:15%; width:70%;}
 .wid_66 {left:17%; right:17%; width:66%;}
-.mt_350 {margin-top:-350px;}
 .mt_275 {margin-top:-275px;}
-.mt_234 {margin-top:-234px;}
 .mt_225 {margin-top:-225px;}
-.mt_171 {margin-top:-171px;}
 .mt_150 {margin-top:-150px;}
 .mt_122 {margin-top:-122px;}
 .mt_118 {margin-top:-118px;}
@@ -151,8 +147,7 @@
 .pop_header .pop_clse {position:absolute; top:0; right:0; width:60px; height:45px; background:url(http://image.ilhaeyo.com/imgs/ilheayo_job/img01/ico_clse.png) no-repeat 70% center; background-size:18px 18px; text-indent:-9999px;}
 
 /* 추가 알림_버튼x 161226_주철만 */
-/*.alarm_nobtn {display:none; position:fixed; z-index:999; left:50%; bottom:30px; width:80%; height:auto; overflow:hidden; border-radius:20px; background:rgba(0,0,0,.85); margin-left:-40%; }*/
-.alarm_nobtn {display:none; position:absolute; z-index:999; left:50%; bottom:0; top:0; margin-top:auto; margin-bottom:auto; width:80%; height:auto; overflow:hidden; border-radius:20px; background:rgba(0,0,0,.85); margin-left:-40%; display:inline-table; }
+.alarm_nobtn {display:none; position:fixed; z-index:999; left:50%; bottom:30px; width:80%; height:auto; overflow:hidden; border-radius:20px; background:rgba(0,0,0,.85); margin-left:-40%; }
 .alarm_nobtn p {padding:15px; color:#fff; font-size:14px; line-height:18px; word-wrap:break-word; text-align:center;}
 
 /****************************** 170209 김다미 ******************************/
@@ -225,20 +220,17 @@
  /*----------------------------- 나이선택팝업 (170221 김다솜) ------------------------------------*/
 .pop_content .pop_u .pop_l_full {float:left; width:100%; height:auto; text-align:center;}
 .pop_content .pop_u .slct_table{height:38px; line-height:38px;}
-.pop_content .pop_u .slct_table a{display:block; width:100%; height:100%; color:#000; font-size:15px; padding-left:5px; border-width:0px 1px 1px 0; border-style:solid; border-color:#e7e7e7; box-sizing:border-box; letter-spacing:-0.5px; background:url(http://image.club5678.com/imgs/ilheayo_job/img01/ico_chk02_off.png) 7% center no-repeat; background-size:18px 18px;}
-.pop_content .pop_u .slct_table a:active{background:rgba(0,0,0,.05) url(http://image.club5678.com/imgs/ilheayo_job/img01/ico_chk02_off.png) 7% center no-repeat; background-size:18px 18px;;}
+.pop_content .pop_u .slct_table a{display:block; width:100%; height:100%; color:#6d6d6d; font-size:15px; border-width:0px 1px 1px 0; border-style:solid; border-color:#e7e7e7; box-sizing:border-box;}
+.pop_content .pop_u .slct_table a:active{background:rgba(0,0,0,.1);}
 .pop_content .pop_u .slct_table .fc_green{color:#04d464;}
 .pop_content .pop_u .slct_table .fc_blue{color:#0082d3;}
-.pop_content .pop_u .slct_table .slct_checked{color:#24a0ea;}
-.pop_content .pop_u .slct_table .slct_checked .fc_green, .pop_content .pop_u .slct_table .slct_checked .fc_blue{color:#24a0ea; font-weight:bold;}
-.pop_content .pop_u .slct_table .slct_active{color:#24a0ea; font-weight:bold; background:url(http://image.club5678.com/imgs/ilheayo_job/img01/ico_chk03_on.png) 7% center no-repeat; background-size:18px 18px;}
+.pop_content .pop_u .slct_table .slct_checked{color:#24a0ea; font-weight:bold;}
+.pop_content .pop_u .slct_table .slct_checked .fc_green, .pop_content .pop_u .slct_table .slct_checked .fc_blue{color:#24a0ea;}
+.pop_content .pop_u .slct_table .slct_active{color:#24a0ea; font-weight:bold; background:url(http://image.club5678.com/imgs/ilheayo_job/img01/ico_chk_on.png) 7% center no-repeat; background-size:15px 11px;}
 .pop_content .pop_u .slct_table .slct_active .fc_green, .pop_content .pop_u .slct_table .slct_active .fc_blue{color:#24a0ea;}
-.pop_content .pop_u .slct_table .slct_active:active{background:rgba(0,0,0,.05) url(http://image.club5678.com/imgs/ilheayo_job/img01/ico_chk03_on.png) 7% center no-repeat; background-size:18px 18px;}
-.pop_content .pop_u .pop_l_full a{background:url(http://image.club5678.com/imgs/ilheayo_job/img01/ico_chk02_off.png) 32% center no-repeat; background-size:18px 18px;}
-.pop_content .pop_u .pop_l_full a:active{background:rgba(0,0,0,0.05) url(http://image.club5678.com/imgs/ilheayo_job/img01/ico_chk02_off.png) 32% center no-repeat; background-size:18px 18px;}
-.pop_content .pop_u .slct_table .slct_active_l{background:url(http://image.club5678.com/imgs/ilheayo_job/img01/ico_chk03_on.png) 32% center no-repeat; background-size:18px 18px;}
-.pop_content .pop_u .slct_table .slct_active_l:active{background:rgba(0,0,0,0.05) url(http://image.club5678.com/imgs/ilheayo_job/img01/ico_chk03_on.png) 32% center no-repeat; background-size:18px 18px;}
-
+.pop_content .pop_u .slct_table .slct_active:active{background:rgba(0,0,0,.1) url(http://image.club5678.com/imgs/ilheayo_job/img01/ico_chk_on.png) 7% center no-repeat; background-size:15px 11px;}
+.pop_content .pop_u .slct_table .slct_active_l {color:#24a0ea; font-weight:bold; background:url(http://image.club5678.com/imgs/ilheayo_job/img01/ico_chk_on.png) 32% center no-repeat; background-size:15px 11px;}
+.pop_content .pop_u .slct_table .slct_active_l:active{background:rgba(0,0,0,.1) url(http://image.club5678.com/imgs/ilheayo_job/img01/ico_chk_on.png) 32% center no-repeat; background-size:15px 11px;}
  /*--------------------------------------------------------------------------------------------*/
 
 /****************************** 170303 김다미 ******************************/
@@ -265,19 +257,17 @@
 .pop_content .pop_u .pop_l .pop_second ul {display:none;}
 .pop_content .pop_u .pop_l ul {width:100%; height:auto;}
 .pop_content .pop_u .pop_l ul li {width:100%; height:36px; line-height:36px;}
-.pop_content .pop_u .pop_l ul li a {display:block; width:100%; height:100%; color:#000; font-size:15px; text-align:center; letter-spacing:-0.5px;}
-.pop_content .pop_u .pop_l ul li a:active {background:rgba(0,0,0,.05);}
-.pop_content .pop_u .pop_l .pop_first .slct_checked{color:#24a0ea; font-weight:bold;}
-.location_slct .pop_u .pop_l .pop_first .slct_active{color:#24a0ea; font-weight:bold; background:url(http://image.club5678.com/imgs/ilheayo_job/img01/bg_slct_acive.png) center center no-repeat; background-size:50px 36px;}
-.location_slct .pop_u .pop_l .pop_first .slct_active:active{background:rgba(0,0,0,.05) url(http://image.club5678.com/imgs/ilheayo_job/img01/bg_slct_acive.png) center center no-repeat; background-size:50px 36px;}
-.field_slct .pop_u .pop_l .pop_first .slct_active{color:#24a0ea; font-weight:bold; background:url(http://image.club5678.com/imgs/ilheayo_job/img01/bg_slct_acive.png) center center no-repeat; background-size:95px 36px;}
-.field_slct .pop_u .pop_l .pop_first .slct_active:active{background:rgba(0,0,0,.05) url(http://image.club5678.com/imgs/ilheayo_job/img01/bg_slct_acive.png) center center no-repeat; background-size:95px 36px;}
-.pop_content .pop_u .pop_l .pop_second a{padding-left:5px; box-sizing:border-box; background:url(http://image.club5678.com/imgs/ilheayo_job/img01/ico_chk02_off.png) 7% center no-repeat; background-size:18px 18px;}
-.pop_content .pop_u .pop_l .pop_second a:active{background:rgba(0,0,0,0.05) url(http://image.club5678.com/imgs/ilheayo_job/img01/ico_chk02_off.png) 7% center no-repeat; background-size:18px 18px;}
-.pop_content .pop_u .pop_l .pop_second .slct_active{background:url(http://image.club5678.com/imgs/ilheayo_job/img01/ico_chk03_on.png) 7% center no-repeat; background-size:18px 18px;}.pop_content .pop_u .pop_l .pop_second .slct_active:active{background:rgba(0,0,0,0.05) url(http://image.club5678.com/imgs/ilheayo_job/img01/ico_chk03_on.png) 7% center no-repeat; background-size:18px 18px;}
-@media(max-width:350px){
-.pop_content .pop_u .pop_l .pop_second a{padding-left:10px; box-sizing:border-box;}
-}
+.pop_content .pop_u .pop_l ul li a {display:block; width:100%; height:100%; color:#000; font-size:15px; text-align:center;}
+.pop_content .pop_u .pop_l ul li a:active {background:rgba(0,0,0,.1);}
+.pop_content .pop_u .pop_l ul li .slct_checked{color:#24a0ea; font-weight:bold;}
+.pop_content .pop_u .pop_l ul li .slct_active{color:#24a0ea; font-weight:bold; background:url(http://image.club5678.com/imgs/ilheayo_job/img01/ico_chk_on.png) 7% center no-repeat; background-size:15px 11px;}
+.pop_content .pop_u .pop_l ul li .slct_active:active{background:rgba(0,0,0,.1) url(http://image.club5678.com/imgs/ilheayo_job/img01/ico_chk_on.png) 7% center no-repeat; background-size:15px 11px;}
+
+/*.pop_divi1{width:25%!important;}
+.pop_divi2{width:75%!important;}
+.pop_divi2 ul:after{content:""; display:block; clear:both;}
+.pop_divi2 ul li{width:50%!important; float:left;}
+.pop_divi1 ul li a,.pop_divi2 ul li a{font-size:14px!important;}*/
 
 /*----------------------------- 170306 신고팝업수정 (김다솜) -----------------------------*/
 .grd_pop_work {background:#04d464; background:-moz-linear-gradient(left, #04d464 0%, #03bb85 100%); background:-webkit-linear-gradient(left, #04d464 0%,#03bb85 100%); background:linear-gradient(to right, #04d464 0%,#03bb85 100%); filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#04d464', endColorstr='#03bb85',GradientType=1 );}
@@ -286,9 +276,6 @@
 .pop_report {display:block; width:100%; height:100%; padding-left:28px; background:url(http://image.ilhaeyo.com/imgs/ilheayo_job/img01/ico_report02.png) no-repeat left center; background-size:23px 24px; font-size:16px; box-sizing:border-box;letter-spacing:-1px;}
 
 .report_slct {position:relative; width:100%; height:auto;}
-.report_reason{height:275px; overflow-y:scroll;}
-.report_write{height:97px; box-shadow:0px 1px 17px 1px #afafaf;}
-
 .report_slct li {position:relative; width:100%; height:50px; padding:0 20px; border-bottom:1px solid #d8deea; color:#46526c; font-size:15px; font-weight:700; line-height:50px; vertical-align:middle; box-sizing:border-box;}
 .report_slct li input[type=radio] {display:block; position:absolute; z-index:10; top:0px; right:0px; width:100%; height:100%; opacity:0; cursor:pointer;}
 .report_slct li .slct_check {position:absolute; top:15px; right:20px; width:20px; height:20px; border:1px solid #545454; border-radius:100%; background:#ffffff; background:-moz-radial-gradient(center, ellipse cover, #ffffff 0%, #ffffff 40%, #f7f5fe 100%); background:-webkit-radial-gradient(center, ellipse cover, #ffffff 0%,#ffffff 40%,#f7f5fe 100%); background:radial-gradient(ellipse at center, #ffffff 0%,#ffffff 40%,#f7f5fe 100%); transition:all 0.1s ease-in-out;filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f7f5fe',GradientType=1 ); -webkit-transition:all 0.1s ease-in-out; -o-transition:all 0.1s ease-in-out; -moz-transition:all 0.1s ease-in-out; -ms-transition:all 0.1s ease-in-out;}
@@ -297,9 +284,8 @@
 .report_slct li .slct_checked:before {background-color:#0081d4;}
 
 /* 신고사유 */
-.report_slct li.rp_reason{padding:0 20px; height:97px; padding-top:1px;}
+.report_slct li.rp_reason{padding:0 20px; height:97px;}
 .report_slct li.rp_reason label{display:block; color:#3878c5; font-size:15px; line-height:28px; margin-top:8px;}
-.report_write li.rp_reason label{display:block; color:#3878c5; font-size:15px; line-height:28px; margin-top:6px;}
 .report_slct li.rp_reason textarea{width:100%; height:50px!important; top:0; padding:6.5px 10px; border:1px solid #d8deea; background-color:#f8fafe; box-sizing:border-box; resize:none!important; outline:none; font-family:'NanumSquare'; font-size:15px; font-weight:bold; color:#46526c; line-height:19px; appearance:none; -webkit-appearance:none; -ms-appearance:none; -moz-appearance:none; -o-appearance:none;}
 .report_slct li.rp_reason textarea::-webkit-input-placeholder{font-weight:normal; color:#61708e;}
 
@@ -313,32 +299,3 @@
 .pop_report_dn ul li a:active {background:rgba(0,0,0,0.05);}
 .pop_report_dn ul li a.btn_rp{color:#f04a37;}
 /*-------------------------------------------------------------------------------------*/
-
-/*-----------------------------------------------170308 내등록글관리_pop제목수정하기,내용수정하기 추가(김다솜) -----------------------------------------------*/
-.mod_header {position:relative; width:100%; height:auto;}
-.mod_header h2 {width:100%; height:35px; margin:0; padding:0 20px; border-radius:10px 10px 0 0; color:#fff; font-size:15px; line-height:35px; box-sizing:border-box;}
-
-.box_mod_tit {position:relative; width:100%; height:auto; padding:16px 22px 4px 22px; box-sizing:border-box;}
-.box_mod_tit input[type=text] {display:block; width:100%; height:34px!important; padding:7px 10px; border:1px solid #c0c7d4; border-radius:3px; background:#f2f5fa; outline:none; font-size:14px; color:#46526c; font-family:'Nanumodquare'; font-weight:700; line-height:16px; box-sizing:border-box; resize:none!important;}
-
-.box_mod_txt {position:relative; width:100%; height:auto; padding:16px 22px 4px 22px; box-sizing:border-box;}
-.box_mod_txt textarea {display:block; width:100%; height:100px!important; padding:8px 10px; border:1px solid #c0c7d4; border-radius:3px; background:#f2f5fa; outline:none; font-size:14px; color:#46526c; font-family:'Nanumodquare'; font-weight:700; line-height:21px; box-sizing:border-box; resize:none!important;}
-
-.mod_dn {width:100%; height:auto; padding:10px 15% 15px 15%; box-sizing:border-box;}
-.mod_dn:after {display:block; clear:both; content:"";}
-.mod_dn li {display:table; float:left; width:50%; height:40px;}
-.mod_dn li a {display:table-cell; padding:0 5px; vertical-align:middle;}
-.mod_dn li a span {width:100%; padding:13px 0; color:#46526c; font-size:16px; line-height:15px;}
-/*----------------------------------------------------------------------------------------------------------------------------------------------------*/
-
-input:-moz-placeholder {color:#46526c; font-weight:normal;}
-::-webkit-input-placeholder {color:#46526c; font-weight:normal;}
-::-moz-placeholder {color:#46526c; font-weight:normal;}
-:-ms-input-placeholder {color:#46526c; font-weight:normal;}
-
-/*----------------------------- 170310 광고서비스오픈준비중팝업 추가 (김다솜) -----------------------------*/
-.pop_all .pop_open{position:relative; width:100%; height:auto; text-align:center;}
-.pop_all .pop_open img.open_ld{margin:28px 0 10px 0}
-.pop_all .pop_open .open_txt{margin:10px 0; font-size:15px; color:#4d4d4d; line-height:23px; letter-spacing:-0.5px;}
-.pop_all .pop_open .open_txt span{border-bottom:1px solid #4d4d4d; font-weight:700;}
-/*---------------------------------------------------------------------------------------------------*/

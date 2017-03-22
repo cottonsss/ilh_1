@@ -131,7 +131,7 @@ $(document).ready(function(){
 
 	/* 팝업 상세 선택시 */
 	$(".pop_second ul li").click(function(){
-		$(this).find("a").toggleClass("slct_active");
+		$(this).find("a").addClass("slct_active");
 	});
 
 	/* 연락글 선택 라디오버튼 */
@@ -198,7 +198,7 @@ $(document).ready(function(){
 				$(".fix_bar").css("height", bar_height);
 			}
 		},410);
-	})
+	});
 
 	/* 문의 구분 네비 */
 	$("#tab_nav ul li").click(function(){
@@ -244,9 +244,8 @@ $(document).ready(function(){
 		$(notice_txt).slideToggle(200);
 	});
 
-    /*
-	 지도
-	$(".customoverlay").click(function(){
+	/******************** 지도 ********************/
+	/*$(".customoverlay").click(function(){
 		$("#container").fadeToggle(200);
 		$(".box_all_info").slideToggle(200);
 	});
@@ -261,15 +260,29 @@ $(document).ready(function(){
 			$("#container").fadeOut(200);
 			$(".box_all_info").slideUp(200);
 		}
-	});
+	});*/
 
-	function info_list1_width(){
+	/*function info_list1_width(){
 		var window_width =$(window).width();
 		var info_list1_width = window_width + "px"
 		$(".info_list1").css("width",info_list1_width);
 	}
 	$(window).on("load",info_list1_width);
-	$(window).on("resize",info_list1_width);
-    */
+	$(window).on("resize",info_list1_width);*/
+	/*function slider_u_width(){
+		var window_width =$(window).width();
+		var slider_u_width = window_width + "px"
+		$(".slider_u").css("width",slider_u_width);
+	}
+	$(window).on("load",slider_u_width);
+	$(window).on("resize",slider_u_width);
+	function slider_l_width(){
+		var window_width =$(window).width();
+		var slider_l_width = window_width + "px"
+		$(".slider_l").css("width",slider_l_width);
+	}
+	$(window).on("load",slider_l_width);
+	$(window).on("resize",slider_l_width);*/
+
 
 });

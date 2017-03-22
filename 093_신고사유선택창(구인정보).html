@@ -19,14 +19,14 @@
 	<div class="pop_bg_modal">
 	</div>
 	<!-- 팝업 배경 -->
-	<div class="pop_container wid_94 mt_275 box_shadow1">
+	<div class="pop_container wid_94 mt_234 box_shadow1">
 		<!-- 팝업 헤더 -->
 		<div class="pop_header">
 			<h2 class="grd_pop"><span class="pop_report">구인정보 신고 (사유선택)</span></h2>
 		</div>
 		<!-- // 팝업 헤더 -->
 		<!-- 신고사유 선택 -->
-		<ul class="report_slct">
+		<ul class="report_slct report_reason">
 			<li>
 			허위 내용/맞지 않는 연락처 <input type="radio" name="report_slct" value="허위 내용/맞지 않는 연락처"/>
 			<div class="slct_check">
@@ -62,11 +62,13 @@
 			<div class="slct_check">
 			</div>
 			</li>
-			<li class="rp_reason">
+		</ul>
+		<ul class="report_slct report_write">
+		<li class="rp_reason">
 			<label for="reason_box">상세 사유 입력</label>
 			<textarea name="rp_reason_box" id="rp_reason_box" rows="3" placeholder="상세사유를 입력하세요."></textarea>
 			</li>
-		</ul>
+        </ul>
 		<!-- // 신고사유 선택 -->
 		<!-- 팝업 하단 -->
 		<div class="pop_report_dn">

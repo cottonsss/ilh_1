@@ -1,24 +1,19 @@
 <!doctype html>
-<html lang="ko">
-<head>
+<html lang="ko"><head>
 <meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
-<title>일해요!</title>
-<link href="http://image.club5678.com/imgs/@test/test_nanum.css" rel="stylesheet" type="text/css">
-<link href="css/jquery.mobile.reset.css" rel="stylesheet" type="text/css">
-<link href="css/ilh_default.css" rel="stylesheet" type="text/css">
+<meta name="HandheldFriendly" content="true">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="format-detection" content="telephone=no">
+<title>일해요</title>
+<link rel="stylesheet" type="text/css" href="nanum_sq_url.css">
+<link rel="stylesheet" type="text/css" href="css/ilh_default.css">
 <link href="css/ilh_my_menu.css" rel="stylesheet" type="text/css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
-<script src="js/ilh_design.js"></script>
 </head>
-<body>
-<div id="wrap_input_info">
+<body><div id="wrap_input_info">
 	<!-- 공통 헤더 -->
 	<div id="header" class="header_relative grd_main">
 		<div class="header_btn btn_back">
-			<a href="#">뒤로</a>
+			<a href="javascript:void(0);" id="btn_back" onclick="javascript:cl.goBack();">뒤로</a>
 		</div>
 		<h1 class="sub_header2">날씨 예보</h1>
 	</div>
@@ -29,70 +24,226 @@
 			<li class="chng_tit ft_wt700 bs_txt_base">날씨조회</li>
 			<li class="chng_slct">
 			<div class="slct_region1">
+				<!-- 광역시,도 단위 셀렉트박스 -->
 				<div class="slct_50 slct_region_3 grd_divide">
-					<select>
-						<option>지역</option>
-						<option>서울</option>
-						<option>광주</option>
-						<option>부산</option>
+					<select id="loc">
+						<option value="a">강원</option>
+						<option value="b">경기</option>
+						<option value="c">경남</option>
+						<option value="d">경북</option>
+						<option value="e">광주</option>
+						<option value="f">대구</option>
+						<option value="g">대전</option>
+						<option value="h">부산</option>
+						<option value="i" selected="">서울</option>
+						<option value="z">세종</option>
+						<option value="j">울산</option>
+						<option value="k">인천</option>
+						<option value="l">전남</option>
+						<option value="n">전북</option>
+						<option value="m">제주</option>
+						<option value="o">충남</option>
+						<option value="p">충북</option>
 					</select>
 				</div>
+				<!-- // 광역시,도 단위 셀렉트박스 -->
+				<!-- 시,군,구 단위 셀렉트박스 -->
 				<div class="slct_50 slct_region_4 grd_divide">
-					<select>
-						<option>-</option>
-						<option>마륵동</option>
-						<option>금호동</option>
+					<select id="sLoc">
+						<option value="i01">강남구</option>
+						<option value="i02">강동구</option>
+						<option value="i03">강북구</option>
+						<option value="i04">강서구</option>
+						<option value="i05">관악구</option>
+						<option value="i06">광진구</option>
+						<option value="i07">구로구</option>
+						<option value="i08">금천구</option>
+						<option value="i09">노원구</option>
+						<option value="i10">도봉구</option>
+						<option value="i11">동대문구</option>
+						<option value="i12">동작구</option>
+						<option value="i13">마포구</option>
+						<option value="i14">서대문구</option>
+						<option value="i15">서초구</option>
+						<option value="i16">성동구</option>
+						<option value="i17">성북구</option>
+						<option value="i18">송파구</option>
+						<option value="i19">양천구</option>
+						<option value="i20" selected="">영등포구</option>
+						<option value="i21">용산구</option>
+						<option value="i22">은평구</option>
+						<option value="i23">종로구</option>
+						<option value="i24">중구</option>
+						<option value="i25">중랑구</option>
 					</select>
 				</div>
+				<!-- // 시,군,구 단위 셀렉트박스 -->
 			</div>
 			</li>
-			<li class="chng_btn"><a href="#">
-			<div class="chng_ok btn_grd_white ft_wt700 bs_txt_base">
-				 조회
-			</div>
-			</a></li>
+			<li class="chng_btn">
+				<!-- 조회 버튼 -->
+				<a href="javascript:searchWth();">
+					<div class="chng_ok btn_grd_white ft_wt700 bs_txt_base">
+						 조회
+					</div>
+				</a>
+				<!-- // 조회 버튼 -->
+			</li>
 		</ul>
 	</div>
 	<!-- // 상단 선택바 -->
 	<div id="container">
 		<div class="roca_day_line">
 			<ul>
-				<li><span>전북 &gt; 전주시 덕진구</span></li>
-				<li><span>2016.12.05.11:00</span></li>
+				<li><span id="locName">서울 &gt; 영등포구</span></li> <!-- // 지역 정보 -->
+				<li><span id="schTime">2017.03.10. 16:12</span></li> <!-- // 업데이트 시간 -->
 			</ul>
 		</div>
-		<div class="list_wet_wrap">
-			<ul class="wet_slot_box">
-				<li class="wet_list_slot">
-				<ul class="wet_slot_content">
-					<li><span class="day_crlc_mark today_crlc_txt">월</span><span class="day_txt today_color">오늘</span></li>
-					<li><img src="http://image.club5678.com/imgs/ilheayo_job/weather/ico_wth_01.png"><span class="wth_img_txt">오전 <b>5˚c</b><br>
-					 맑음</span></li>
-					<li><img src="http://image.club5678.com/imgs/ilheayo_job/weather/ico_wth_02.png"><span class="wth_img_txt">오전 <b>10˚c</b><br>
-					 맑음</span></li>
-				</ul>
-				</li>
-				<li class="wet_list_slot">
-				<ul class="wet_slot_content">
-					<li><span class="day_crlc_mark an_day_crlc">화</span><span class="day_txt an_day_color">내일</span></li>
-					<li><img src="http://image.club5678.com/imgs/ilheayo_job/weather/ico_wth_03.png"><span class="wth_img_txt">오전 <b>-5˚c</b><br>
-					 구름조금</span></li>
-					<li><img src="http://image.club5678.com/imgs/ilheayo_job/weather/ico_wth_04.png"><span class="wth_img_txt">오전 <b>5˚c</b><br>
-					 구름많음</span></li>
-				</ul>
-				</li>
-				<li class="wet_list_slot">
-				<ul class="wet_slot_content">
-					<li><span class="day_crlc_mark an_day_crlc">수</span><span class="day_txt an_day_color">12 / 8</span></li>
-					<li><img src="http://image.club5678.com/imgs/ilheayo_job/weather/ico_wth_05.png"><span class="wth_img_txt">오전 <b>-15˚c</b><br>
-					 구름많음</span></li>
-					<li><img src="http://image.club5678.com/imgs/ilheayo_job/weather/ico_wth_15.png"><span class="wth_img_txt">오전 <b>5˚c</b><br>
-					 비</span></li>
-				</ul>
-				</li>
-			</ul>
-		</div>
+		<!-- 새로운 폼 -->
+        <div class="wd_table_call">
+        	<div class="wd_table_call_head">
+            	<div class="h_row">
+                	<div class="colum_f" data-label="day_col">
+                    </div>
+                    <div class="colum" data-label="morning_col">
+                    	<span>오전</span>
+                    </div>
+                    <div class="colum" data-label="afternoon_col">
+                    	<span>오후</span>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+            	<div class="colum_f" data-label="day_col">
+                	<span class="mark_today">월</span>
+                    <span class="txt_today">오늘</span>
+                </div>
+                <div class="colum" data-label="morning_col">
+                	<span class="wd_ico">
+                    <img src="http://image.club5678.com/imgs/ilheayo_job/weather/ico_wth_01.png">
+                    </span>
+                    <span class="wd_info">5℃<span class="wd_kr">맑음</span></span>
+                </div>
+                <div class="colum" data-label="evening_col">
+                	<span class="wd_ico">
+                    <img src="http://image.club5678.com/imgs/ilheayo_job/weather/ico_wth_02.png">
+                    </span>
+                    <span class="wd_info">10℃<span class="wd_kr">맑음</span></span>
+                </div>
+            </div>
+            <div class="row">
+            	<div class="colum_f" data-label="day_col">
+                	<span class="mark_anther">화</span>
+                    <span class="txt_anther">내일</span>
+                </div>
+                <div class="colum" data-label="morning_col">
+                	<span class="wd_ico">
+                    <img src="http://image.club5678.com/imgs/ilheayo_job/weather/ico_wth_03.png">
+                    </span>
+                    <span class="wd_info">5℃<span class="wd_kr">구름조금</span></span>
+                </div>
+                <div class="colum" data-label="evening_col">
+                	<span class="wd_ico">
+                    <img src="http://image.club5678.com/imgs/ilheayo_job/weather/ico_wth_04.png">
+                    </span>
+                    <span class="wd_info">11℃<span class="wd_kr">구름조금</span></span>
+                </div>
+            </div>
+            <div class="row">
+            	<div class="colum_f" data-label="day_col">
+                	<span class="mark_anther">수</span>
+                    <span class="txt_anther">12/07</span>
+                </div>
+                <div class="colum" data-label="morning_col">
+                	<span class="wd_ico">
+                    <img src="http://image.club5678.com/imgs/ilheayo_job/weather/ico_wth_05.png">
+                    </span>
+                    <span class="wd_info">5℃<span class="wd_kr">구름많음</span></span>
+                </div>
+                <div class="colum" data-label="evening_col">
+                	<span class="wd_ico">
+                    <img src="http://image.club5678.com/imgs/ilheayo_job/weather/ico_wth_06.png">
+                    </span>
+                    <span class="wd_info">11℃<span class="wd_kr">구름많음</span></span>
+                </div>
+            </div>
+            <div class="row">
+            	<div class="colum_f" data-label="day_col">
+                	<span class="mark_anther">목</span>
+                    <span class="txt_anther">12/08</span>
+                </div>
+                <div class="colum" data-label="morning_col">
+                	<span class="wd_ico">
+                    <img src="http://image.club5678.com/imgs/ilheayo_job/weather/ico_wth_07.png">
+                    </span>
+                    <span class="wd_info">5℃<span class="wd_kr">흐림</span></span>
+                </div>
+                <div class="colum" data-label="evening_col">
+                	<span class="wd_ico">
+                    <img src="http://image.club5678.com/imgs/ilheayo_job/weather/ico_wth_08.png">
+                    </span>
+                    <span class="wd_info">11℃<span class="wd_kr">소나기</span></span>
+                </div>
+            </div>
+            <div class="row">
+            	<div class="colum_f" data-label="day_col">
+                	<span class="mark_anther">금</span>
+                    <span class="txt_anther">12/09</span>
+                </div>
+                <div class="colum" data-label="morning_col">
+                	<span class="wd_ico">
+                    <img src="http://image.club5678.com/imgs/ilheayo_job/weather/ico_wth_09.png">
+                    </span>
+                    <span class="wd_info">5℃<span class="wd_kr">비</span></span>
+                </div>
+                <div class="colum" data-label="evening_col">
+                	<span class="wd_ico">
+                    <img src="http://image.club5678.com/imgs/ilheayo_job/weather/ico_wth_10.png">
+                    </span>
+                    <span class="wd_info">11℃<span class="wd_kr">한때비</span></span>
+                </div>
+            </div>
+            <div class="row">
+            	<div class="colum_f" data-label="day_col">
+                	<span class="mark_anther">토</span>
+                    <span class="txt_anther">12/10</span>
+                </div>
+                <div class="colum" data-label="morning_col">
+                	<span class="wd_ico">
+                    <img src="http://image.club5678.com/imgs/ilheayo_job/weather/ico_wth_11.png">
+                    </span>
+                    <span class="wd_info">5℃<span class="wd_kr">비또는눈</span></span>
+                </div>
+                <div class="colum" data-label="evening_col">
+                	<span class="wd_ico">
+                    <img src="http://image.club5678.com/imgs/ilheayo_job/weather/ico_wth_12.png">
+                    </span>
+                    <span class="wd_info">11℃<span class="wd_kr">가끔 비또는눈</span></span>
+                </div>
+            </div>
+            <div class="row">
+            	<div class="colum_f" data-label="day_col">
+                	<span class="mark_anther">일</span>
+                    <span class="txt_anther">12/11</span>
+                </div>
+                <div class="colum" data-label="morning_col">
+                	<span class="wd_ico">
+                    <img src="http://image.club5678.com/imgs/ilheayo_job/weather/ico_wth_17.png">
+                    </span>
+                    <span class="wd_info">5℃<span class="wd_kr">천둥번개</span></span>
+                </div>
+                <div class="colum" data-label="evening_col">
+                	<span class="wd_ico">
+                    <img src="http://image.club5678.com/imgs/ilheayo_job/weather/ico_wth_18.png">
+                    </span>
+                    <span class="wd_info">11℃<span class="wd_kr">연무</span></span>
+                </div>
+            </div>
+        </div>
+        <!-- // 새로운 폼 -->
 	</div>
 </div>
-</body>
-</html>
+
+
+
+</body></html>

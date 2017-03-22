@@ -226,13 +226,8 @@ body.lg_bg {background-color:#f6faff;}
 .slct_1 .slct_sex a.man_btn_active {position:absolute; right:85px;}
 }
 
-.slct_2 {position:relative; width:100%; height:38px; margin-bottom:10px;}
-.slct_2 span {display:none;}
-.slct_2 .slct_region select {width:100%; height:35px; padding:0 30px 0 14px; border-radius:5px; outline:none; color:#46526c; font-size:13px; box-sizing:border-box; appearance:none;-webkit-appearance:none; -o-appearance:none; -moz-appearance:none;}
-.slct_2 .slct_region select:active {border:1px solid #04d464;}
-.slct_2 .slct_region select_active {border:1px solid #04d464;}
-.slct_2 .slct_region_1 {float:left; width:46%;}
-.slct_2 .slct_region_2 {float:right; width:46%;}
+.slct_1 .slct_region{width:100%; border-radius:5px; outline:none; box-sizing:border-box; appearance:none;-webkit-appearance:none; -o-appearance:none; -moz-appearance:none; text-align:left;}
+.slct_1 .slct_region a{display:block; font-size:13px; color:#46526c; padding:10.5px 30px 10.5px 14px; box-sizing:border-box;}
 /*------------------------------------------------------------------------------------ -------------------------------------------------------------*/
 
 /*----------------------------------------------------- 170215 소셜로그인데이터수신페이지 수정(김다솜) -----------------------------------------------------*/
@@ -242,9 +237,9 @@ body.lg_bg {background-color:#f6faff;}
 .rcv_lg_data p{font-size:17px; line-height:28px; letter-spacing:-1px;}
 /*------------------------------------------------------------------------------------------------------------------------------------------------*/
 
-input:-moz-placeholder {color:#46526c; font-weight:normal; line-height:16px;}
-::-webkit-input-placeholder {color:#46526c; font-weight:normal; line-height:16px;}
-::-moz-placeholder {color:#46526c; font-weight:normal; line-height:16px;}
-:-ms-input-placeholder {color:#46526c; font-weight:normal; line-height:16px;}
+input:-moz-placeholder {color:#46526c; font-family:'NanumSquare'; font-weight:normal; line-height:16px;}
+::-webkit-input-placeholder {color:#46526c; font-family:'NanumSquare'; font-weight:normal; line-height:16px;}
+::-moz-placeholder {color:#46526c; font-family:'NanumSquare'; font-weight:normal; line-height:16px;}
+:-ms-input-placeholder {color:#46526c; font-family:'NanumSquare'; font-weight:normal; line-height:16px;}
 
 
