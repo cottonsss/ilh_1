@@ -206,11 +206,12 @@ background:#fff url('http://image.ilhaeyo.com/imgs/ilheayo_job/img01/btn_arrow_o
 .slct_type{position:absolute; top:85px; left:142px; width:80px; height:auto; z-index:10;}
 .slct_type .tp_inac{display:none; width:80px; padding:8px 10px 8px 0; background:rgba(255,255,255,0.9) url(http://image.ilhaeyo.com/imgs/ilheayo_job/img01/bullet_drop_d.png) 80% center no-repeat; background-size:7px 5px; border:2px solid #dfdfde; border-radius:7px; box-sizing:border-box; font-size:14px; font-weight:700; letter-spacing:-0.5px; color:#c3c3c3; text-align:center;}
 .slct_type .tp_all{width:80px; padding:7.5px 10px 7.5px 0; font-weight:700; letter-spacing:-0.5px; text-align:center; background:rgba(255,255,255,0.8) url(http://image.ilhaeyo.com/imgs/ilheayo_job/img01/bullet_drop_d.png) 80% center no-repeat; background-size:7px 5px; border:2px solid #35bfb7; border-radius:7px; box-sizing:border-box; color:#35bfb7;}/*기본btn*/
-.slct_type .tp_all_on{padding:9px 7px 8px 0; background:#38bc83 url(http://image.ilhaeyo.com/imgs/ilheayo_job/img01/bullet_drop_u.png) 80% center no-repeat; background-size:7px 5px; border:2px solid #38bc83; border-radius:7px 7px 0 0; box-sizing:border-box; font-size:14px; color:#fff;}/*선택btn*/
-.slct_type .tp_all a{font-size:14px; line-height:14px;}
+.slct_type .tp_all_on{padding:9px 10px 8px 0; background:#35bfb7 url(http://image.ilhaeyo.com/imgs/ilheayo_job/img01/bullet_drop_u.png) 80% center no-repeat; background-size:7px 5px; border:2px solid #35bfb7; border-radius:7px 7px 0 0; box-sizing:border-box; font-size:14px; color:#fff;}/*선택btn*/
+.slct_type .tp_all a{font-size:14px;}
 
-.slct_type ul.slct_tp_dropdown{display:none; width:80px; height:100px; overflow-y:auto; overflow-x:none; padding:4px 10px; box-sizing:border-box; background:rgba(255,255,255,0.94); border-radius:0 0 7px 7px; box-shadow:1px 1px 8px rgba(94,94,94,0.6)}
+.slct_type ul.slct_tp_dropdown{display:none; width:80px; height:100px; overflow-y:auto; overflow-x:none; box-sizing:border-box; background:rgba(255,255,255,0.94); border-radius:0 0 7px 7px; box-shadow:1px 1px 8px rgba(94,94,94,0.6)}
 .slct_type ul.slct_tp_dropdown li{width:100%; height:auto;}
-.slct_type ul.slct_tp_dropdown li a{display:block; width:100%; padding:8px 0; font-size:14px; letter-spacing:-0.5px; box-sizing:border-box;}
+.slct_type ul.slct_tp_dropdown li a{display:block; width:100%; padding:8px 0; font-size:14px; letter-spacing:-0.5px; box-sizing:border-box; text-align:center;}
+.slct_type ul.slct_tp_dropdown li a:active{background-color:rgba(0,0,0,0.05);}
 /* select 메뉴 */
 /*--------------------------------------------------------------------------------------------------------------------------*/
